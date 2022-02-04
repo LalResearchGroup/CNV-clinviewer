@@ -27,10 +27,7 @@ library(gtools)
 library(tinytex)
 library(rmarkdown)
 library(enrichR)
-
 library(bedtoolsr)
-
-#setwd("/Users/mariegramm/Dropbox/LAL_PROJECTS/CNV_portal/GitHub/CNV-viewer/ClinCNV-viewer")
 
 jscode <- "
   shinyjs.collapse = function(boxid) {
@@ -140,15 +137,6 @@ ui = fluidPage(
                                             div(style = "display:inline-block; float:right", 
                                                 p("CNVs not in hg19? Lift over", a("here", href="https://genome.ucsc.edu/cgi-bin/hgLiftOver", target="_blank", style="color:#3c8dbc;font-weight:bold")),
                                             ))
-                                     #,
-                                     #tags$hr(),
-                                     # fluidRow(
-                                     #   column(width = 12,
-                                     #          div(style = "float:right", 
-                                     #            actionButton("submit_example", "Run example"),
-                                     #            tags$head(tags$style(HTML('#submit_example{background-color:#EC7C25}')))
-                                     #          ))
-                                     # )
                                 ) #close box
                                 ), #close column
                         column(width =12,
@@ -483,7 +471,7 @@ ui = fluidPage(
                           "<br>","<br>",
                           "<b>Methods</b>","<br>",
                           "Aggregated CNV data of >500,000 individuals from the UK Biobank and gnomAD as well as >10,000 patient CNVs from ClinVar.
-                          In addition, we identified and integrated ten genomic annotations such as gene-dosage sensitivity scores and two CNV bioinformatic tools (ClassifyCNV, enrichr). 
+                          In addition, we identified and integrated ten genomic annotations such as gene dosage sensitivity scores and two CNV bioinformatic tools (ClassifyCNV, enrichr). 
                           All data and tools were integrated into a novel R Shiny based interface and was deployed in the google cloud as web-application",
                           "<br>","<br>",
                           "<b>Results</b>","<br>",
@@ -492,7 +480,7 @@ ui = fluidPage(
                           "a) automated and manual CNV classification based on the 2019 ACMG/ClinGen Technical Standards for CNVs, ","<br>",
                           "b) generation of comprehensive reports including CNV classification details, and overlap with dosage-sensitive and clinically relevant genes and genomic region,","<br>",
                           "c) visualization and dynamic filtering of uploaded CNVs and their exploration in context to CNVs and known disease from publicly available databases,","<br>",
-                          "d) evaluation of the gene content by various gene-dosage sensitivity scores and clinical annotations,","<br>",
+                          "d) evaluation of the gene content by various gene dosage sensitivity scores and clinical annotations,","<br>",
                           "e) gene set enrichment analyses to infer knowledge about genes from a selected genomic region.",
                           "<br>","<br>",
                           "<b>Conclusion</b>","<br>",

@@ -292,7 +292,7 @@ server <- function(input, output, session) {
   })
   
   observeEvent(input$submit_example, { 
-    df <- read_excel("cnvs_9q33.3q34.11microdeletions.xlsx")
+    df <- data$cnvs_9q_example_input
     #df <- read_table2("clinncnv_viewer_example.bed")
     #df <- read_table2("cnvs_allanbayat_2.tsv")
     #df <- read_table2("cnvs_ausnz.tsv")
@@ -419,13 +419,7 @@ server <- function(input, output, session) {
   observeEvent(input$submit_example, {
   req(input$submit_example > 0)
 
-   scoresheet$table <- read_delim(paste0("cnv_classification_details_chr9q33.tsv"),
-                                  #paste0("cnv_classification_details.tsv"),
-                                  #paste0("cnv_classification_details_platzer.tsv"),
-                                  #paste0("cnv_classification_details_allan_2.tsv"),
-                                  #paste0("cnv_classification_details_ausnz.tsv"),
-                                  delim = "\t", escape_double = FALSE,
-                                  trim_ws = TRUE)
+   scoresheet$table <- data$cnv_classification_details_chr9q33
 
    uploaded_cnvs$table$VariantID = paste0(uploaded_cnvs$table$CHR, "_", uploaded_cnvs$table$START, "_", uploaded_cnvs$table$END, "_", uploaded_cnvs$table$TYPE)
    uploaded_cnvs$table <- merge(uploaded_cnvs$table, scoresheet$table, by= "VariantID", all.x=T)
@@ -722,7 +716,7 @@ server <- function(input, output, session) {
   
   output$download_report <- downloadHandler(
 
-    filename = "CLINCNV_report.html",
+    filename = "CNV-clinviewer_report.html",
     
     content = function(file) {
       

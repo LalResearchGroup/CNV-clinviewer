@@ -177,7 +177,7 @@ saveRDS(gene_table, file = "processed_data/gene_table.RDS")
 gene_table <- readRDS("processed_data/gene_table.RDS")
 
 
-#### DISEASE REGIONS / SYNDROMES  #####
+##### DISEASE REGIONS / SYNDROMES  #####
 #clingen dosage sensitive regions
 ClinGen_region <- read_csv("ClinGen_region.txt")
 ClinGen_region = ClinGen_region[-nrow(ClinGen_region),]
@@ -340,6 +340,10 @@ gnomad_freq_list <- readRDS("processed_data/gnomad_freq_list.RDS")
 
 
 ##### ClinVar data ####
+
+# file from clinvar is to large, please download here: https://ftp.ncbi.nlm.nih.gov/pub/clinvar/tab_delimited/variant_summary.txt.gz
+# and add file to the data folder (working directory)
+
 variant_summary <- read_delim("variant_summary_160121.txt", 
                               delim = "\t", escape_double = FALSE, 
                               trim_ws = TRUE)
@@ -414,7 +418,7 @@ saveRDS(clinvar_freq_list, file = "processed_data/clinvar_freq_list.RDS")
 clinvar_freq_list <- readRDS("processed_data/clinvar_freq_list.RDS")
 
 
-#### example CNVs #####
+##### example CNVs #####
 example_cnvs <- read_table("cnv-clinviewer_example_table.bed")
 example_cnvs$ID = as.character(example_cnvs$ID)
 example_cnvs$START = as.integer(example_cnvs$START)
@@ -427,9 +431,9 @@ cnvs_9q_example_input <- read_excel("cnvs_9q33.3q34.11microdeletions.xlsx")
 saveRDS(cnvs_9q_example_input, file = "processed_data/cnvs_9q_example_input.RDS") 
 
 cnv_classification_details_chr9q33 <- read_delim("cnv_classification_details_chr9q33.tsv",delim = "\t", escape_double = FALSE,trim_ws = TRUE)
-saveRDS(cnvs_9q_example_input, file = "processed_data/cnv_classification_details_chr9q33.RDS") 
+saveRDS(cnv_classification_details_chr9q33, file = "processed_data/cnv_classification_details_chr9q33.RDS") 
 
-#### About/ description tables #####
+##### About/ description tables #####
 data_sources <- read_excel("data_about.xlsx", sheet = "data_sources")
 saveRDS(data_sources, file = "processed_data/data_sources.RDS") 
 
@@ -443,7 +447,7 @@ Copy_number_gain <- read_excel("data_about.xlsx", sheet = "Copy_number_gain")
 saveRDS(Copy_number_gain, file = "processed_data/Copy_number_gains.RDS") 
 
 
-#### Merge of all data to master data #####
+##### Merge of all data to master data #####
 master_data = list()
 
 for(i in list.files("processed_data")){
