@@ -17,7 +17,8 @@ Aggregated data of >200,000 population CNVs from the UK Biobank and gnomAD as we
 We present the CNV-clinviewer, an interactive visualization and interpretation tool that enables intuitive real-time exploration of CNV data online. After upload of CNV data CNV-clinviewer enables:
 ```
 a) semi-automated CNV classification based on the 2019 ACMG/ClinGen Technical Standards for CNVs,
-b) generation of comprehensive reports including CNV classification details, and overlap with established/predicted haploinsufficient/ triploinsufficient and clinically relevant genes and genomic regions,
+b) generation of comprehensive reports including CNV classification details, and overlap with 
+   established/predicted haploinsufficient/ triploinsufficient and clinically relevant genes and genomic regions,
 c) visualization and dynamic filtering of uploaded CNVs and identification of overlap in cases and controls, 
 d) evaluation and prioritization of the genomic content by various gene dosage sensitivity scores and clinical annotations, 
 e) gene set enrichment analyses to infer knowledge about genes from a selected genomic region.
