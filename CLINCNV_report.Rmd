@@ -1,0 +1,214 @@
+---
+title: ""
+output: html_document
+params:
+  chr: NA
+  start: NA
+  end: NA
+  type: NA
+  size: NA
+  ISCN_id: NA
+  Classification: NA
+  Total_score: NA
+  combined_score: NA
+  points: NA
+  number_genes: NA
+  overlapping_syndromes: NA
+  number_genediseasepairs: NA
+  c1A: NA
+  c1B: NA
+  c2A: NA
+  c2B: NA
+  c2C: NA
+  c2D: NA
+  c2E: NA
+  c2F: NA
+  c2G: NA
+  c2H: NA
+  c2I: NA
+  c2J: NA
+  c2K: NA
+  c2L: NA
+  c3A: NA
+  c3B: NA
+  c3C: NA
+  c4O: NA
+  section2_text: NA
+  syndromes: NA
+  number_haplogenes: NA
+  number_triplogenes: NA
+  loeuf: NA
+  pLI: NA
+  pHI: NA
+  pTS: NA
+  HI: NA
+  TS_clingen: NA
+  HI_clingen: NA
+  gene_disease: NA
+
+
+---
+
+```{css, echo=FALSE}
+p {
+  text-align:justify;
+}
+```
+<div>
+<div style="background-color:#337ab7;height: 80px;border-radius: 10px;">
+<h1 style="color:white; text-align:center;line-height: 80px;">CNV-clinviewer Report</h1>
+</div>
+
+<div style="text-align:center; color:#337ab7; line-height: 50px; height: 50px;">**NO MEDICAL ADVICE**</div>
+
+---
+
+<h1 style="text-align:center;color:#EC7C25;background-color:#f5bd92;line-height: 60px;border-radius: 10px;"> **`r params$ISCN_id`** </h2>
+<h4 style="text-align:center;color:#337ab7;background-color:#b1cfe9;line-height: 40px;border-radius: 10px;"> **`r params$Classification`** </h4>
+
+---
+
+### **Variant Summary**
+
+
+|Variant                 | Type            | Classification according to ACMG^1^       |     |
+|:----------------------:|:---------------:|:-----------------------------------------:|:--------:|
+| Chr: `r params$chr`    | `r params$type` | Classification: `r params$Classification` |  |
+| Start: `r params$start`|                 | Total score: `r params$combined_score`^2^    |  |  
+| End: `r params$end`    |                 | ClassifyCNV score: `r params$Total_score`   |  |
+| Size: `r params$size`  |                 | Manual user score: `r params$points`   |  |
+
+
+<div style="display: flex;">
+<div style="background-color:#f5bd92;border-radius: 10px; width:33%; margin:5px; padding:10px"> <h3>**`r params$number_genes`**</h3> <p>Number of intersecting genes</p></div>
+<div style="background-color:#f5bd92;border-radius: 10px; width:33%; margin:5px; padding:10px"> <h3>**`r params$number_genediseasepairs`**</h3> <p>Number of intersecting gene disease pairs from ClinGen </p>  </div>
+<div style="background-color:#f5bd92;border-radius: 10px; width:33%; margin:5px; padding:10px"> <h3>**`r params$overlapping_syndromes`**</h3> <p>Number of intersecting CNV syndromes from DECIPHER</p></div>
+</div>
+</div>
+
+<div style="font-size: small;"> ^1^The uploaded CNV was classified based on the [2019 ACMG/ClinGen Technical Standards for CNVs](https://www.gimjournal.org/article/S1098-3600(21)01300-9/fulltext) using [ClassifyCNV](https://www.nature.com/articles/s41598-020-76425-3). The following evidence categories were automatically evaluated
+for copy number losses: 1A/B, 2A-H, 3A-C, 4O, and for copy number gains: 1A/B, 2A-H, 2J-L, 3A-C, 4O. The final classification results from the score from ClassifyCNV and if more information is given the additional score from non-evaluated evidence categories by the user.</div>
+<div style="font-size: small;"> ^2^Scoring: • Pathogenic: 0.99 or more points • Likely Pathogenic: 0.90 to 0.98 points • Variant of Uncertain Significance: 0.89 to −0.89 points • Likely Benign: −0.90 to −0.98 points • Benign: −0.99 or fewer points.</div>
+
+---
+
+### **Intersecting dosage-sensitive & disease genes and syndromes**
+
+<div style=" text-align:justify;background-color:#fafafa; border-radius: 10px;line-height: 20px;vertical-align: middle; padding:10px; margin:10px;  border: solid; border-color:#f5bd92">
+
+#### **Dosage-sensitive genes^1^ **
+
+<div style=" text-align:justify;background-color:#f0f0f0;border-radius: 10px;line-height: 20px;vertical-align: middle; padding:10px; margin:10px;">
+##### Haploinsufficient genes (n= `r params$number_haplogenes`)
+* **based on LOEUF**: `r params$loeuf`
+* **based on pLI**: `r params$pLI` 
+* **based on pHI**: `r params$pHI` 
+* **based on %HI**: `r params$HI`
+* **based on ClinGen haploinsufficiency score**: `r params$TS_clingen`
+</div>
+
+<div style=" text-align:justify;background-color:#f0f0f0;border-radius: 10px;line-height: 20px;vertical-align: middle; padding:10px; margin:10px;">
+##### Triplosensitive genes (n= `r params$number_triplogenes`)
+* **based on pTS**: `r params$pTS`
+* **based on ClinGen triplosensitivity score**: `r params$TS_clingen`
+
+</div>
+
+#### **ClinGen gene disease pairs**
+
+<div style=" text-align:justify;background-color:#f0f0f0;border-radius: 10px;line-height: 20px;vertical-align: middle; padding:10px; margin:10px;">
+* `r params$gene_disease` 
+</div>
+
+#### **CNV syndromes (DECIPHER)**
+
+<div style=" text-align:justify;background-color:#f0f0f0;border-radius: 10px;line-height: 20px;vertical-align: middle; padding:10px; margin:10px;">
+* `r params$syndromes` 
+</div>
+
+</div>
+
+
+<div style="font-size: small;"> ^1^[LOUEF](https://www.nature.com/articles/s41586-020-2308-7) (Loss-of-function observed/expected upper bound fraction, threshold: <0.35), 
+[pLI](https://www.nature.com/articles/nature19057) (Probability of loss of function intolerance, threshold: >0.9), 
+[pHI](https://www.medrxiv.org/content/10.1101/2021.01.26.21250098v1) (Probability of haploinsufficiency, threshold: >0.84), 
+[%HI](https://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.1001154) (Haploinsufficiency score, threshold: <10%), 
+[pTS](https://www.medrxiv.org/content/10.1101/2021.01.26.21250098v1) (Haploinsufficiency score, threshold: >0.993), 
+[ClinGen dosage sensitivity score](https://clinicalgenome.org/curation-activities/dosage-sensitivity/) (selection here: all genes with score 3 (Sufficient Evidence))
+</div>
+
+---
+
+### **Automated scoring of evidence categories from the 2019 ACMG/ClinGen Technical Standards for CNVs.**
+The following evidence categories were automatically evaluated
+- for copy number losses: 1A/B, 2A-H, 3A-C, 4O
+- for copy number gains: 1A/B, 2A-H, 2J-L, 3A-C, 4O
+       
+The following evidence categories were not evaluated (not implemented in [ClassifyCNV](https://www.nature.com/articles/s41598-020-76425-3) algorithm)
+- for copy number losses: 4A-N, 5A-H
+- for copy number gains: 2I, 4A-N, 5A-H
+
+Details about the evidence categories can be found [here](https://www.gimjournal.org/article/S1098-3600(21)01300-9/fulltext).
+
+<div style=" text-align:justify;background-color:#fafafa; border-radius: 10px;line-height: 20px;vertical-align: middle; padding:10px; margin:10px;  border: solid; border-color:#b1cfe9">
+#### **Details about CNV Scoring - `r params$type`**
+
+<div style=" text-align:justify;background-color:#f0f0f0;border-radius: 10px;line-height: 20px;vertical-align: middle; padding:10px; margin:10px;">
+##### Section 1: Initial Assessment of Genomic Content
+* **1A**: `r params$c1A` points
+* **1B**: `r params$c1B` points
+</div>
+
+<div style=" text-align:justify;background-color:#f0f0f0;border-radius: 10px;line-height: 20px;vertical-align: middle; padding:10px;margin:10px;">
+##### Section 2: `r params$section2_text`
+* **2A**: `r params$c2A` points
+* **2B**: `r params$c2B` points
+* **2C**: `r params$c2C` points
+* **2D**: `r params$c2D` points
+* **2E**: `r params$c2E` points
+* **2F**: `r params$c2F` points
+* **2G**: `r params$c2G` points
+* **2H**: `r params$c2H` points
+* **2J**: `r params$c2J` 
+* **2K**: `r params$c2K` 
+* **2L**: `r params$c2L` 
+</div>
+
+<div style=" text-align:justify;background-color:#f0f0f0;border-radius: 10px;line-height: 20px;vertical-align: middle; padding:10px;margin:10px; ">
+##### Section 3: Evaluation of Gene Number
+* **3A**: `r params$c3A` points
+* **3B**: `r params$c3B` points
+* **3C**: `r params$c3C` points
+</div>
+
+<div style="background-color:#f0f0f0;border-radius: 10px;line-height: 20px;vertical-align: middle; padding:10px;margin:10px;">
+##### Section 4: Detailed Evaluation of Genomic Content Using Cases from Published Literature, Public Databases, and/or Internal Lab Data
+* **4A-N**: not implemented
+* **4O**: `r params$c4O` points
+</div>
+
+<div style="background-color:#f0f0f0;border-radius: 10px;line-height: 20px;vertical-align: middle; padding:10px;margin:10px;">
+##### Section 5: Evaluation of Inheritance Pattern/Family History for Patient Being Studied
+* **5A-H**: not implemented
+</div>
+</div>
+
+---
+
+### **Methods**
+#### General Aspects
+<p>This automatically generated report provides an overview on the evaluation of a selected CNV in the context of this website. We combine multiple expert-curated resources on genetic and clinical data.</p> 
+
+#### Limitations 
+<p>The analysis has been performed in a research setting. The contents of this report have been carefully checked and created to the best of our knowledge. But for the information presented here is no claim to completeness, timeliness, quality and accuracy. No responsibility can be accepted for any damage caused by reliance on or use of the contents of this report. We object to any commercial use and disclosure of data.</p>
+
+<p>In case there are any further questions, please do not hesitate to contact us: lald@ccf.org.</p>
+
+--- 
+<div style:"text-align:center;>
+<p>date: `r format(Sys.time(), "%d. %B %Y")`</p>
+
+<p>CNV-clinviewer v1</p>
+</div>
+</div>
+</div>

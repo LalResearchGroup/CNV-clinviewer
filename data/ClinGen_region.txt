@@ -1,0 +1,508 @@
+,Gene/Region,GRCh37,"HI Score","TS Score",OMIM,Morbid,%HI,pLI,LOEUF,"Last Eval."
+R,"16p13.12 population region (gnomAD-SV_v2.1_DEL_16_152599)",16:14782199-14805000,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/09/2021
+R,"1 copy: 14q telomere; 3 copies: 14q telomere",14:106050000-107289540,"40 (Dosage Sensitivity Unlikely)","40 (Dosage Sensitivity Unlikely)",,,‐,‐,‐,07/31/2014
+R,"1 copy: 2q telomere|3 copies: 2q telomere",2:242930600-243102476,"40 (Dosage Sensitivity Unlikely)","40 (Dosage Sensitivity Unlikely)",,,‐,‐,‐,04/24/2014
+R,"1 copy: 6p telomere | 3 copies: 6p telomere",6:259528-339802,"40 (Dosage Sensitivity Unlikely)","40 (Dosage Sensitivity Unlikely)",,,‐,‐,‐,06/20/2014
+R,"10p12.1 population region (DGV_Gold_Standard_June_2021_gssvL11273)",10:27638256-27642180,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/05/2021
+R,"10p12.33 population region (gnomAD-SV_v2.1_DEL_10_108282)",10:17867999-17880000,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/10/2021
+R,"10p12.33 population region (gnomAD-SV_v2.1_DEL_10_108283)",10:17879999-17893800,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/10/2021
+R,"10p12.33 population region (gnomAD-SV_v2.1_DEL_10_108288)",10:18117799-18130100,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/10/2021
+R,"10p12.33 population region (gnomAD-SV_v2.1_DEL_10_108289)",10:18126899-18135000,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/10/2021
+R,"10p13 population region (DGV_Gold_Standard_June_2021_gssvL10668)",10:13259247-13260742,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/05/2021
+R,"10q11.22 population region (DGV_Gold_Standard_June_2021_gssvG4512)",10:47531763-47597768,"0 (No Evidence)","40 (Dosage Sensitivity Unlikely)",,,‐,‐,‐,08/05/2021
+R,"10q11.22 population region (DGV_Gold_Standard_June_2021_gssvL12105)",10:48664595-48872432,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/05/2021
+R,"10q11.22 population region (DGV_Gold_Standard_June_2021_gssvL12112)",10:48902069-48986229,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/05/2021
+R,"10q11.22 population region (gnomAD-SV_v2.1_DEL_10_109954)",10:46310649-46325800,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/10/2021
+R,"10q11.22 population region (gnomAD-SV_v2.1_DEL_10_109958)",10:46338599-46375000,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/10/2021
+R,"10q11.22 population region (gnomAD-SV_v2.1_DEL_10_109998)",10:47171999-47177000,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/10/2021
+R,"10q11.22 population region (gnomAD-SV_v2.1_DEL_10_109999)",10:47177699-47182800,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/10/2021
+R,"10q11.22 population region (gnomAD-SV_v2.1_DEL_10_110000)",10:47191199-47201400,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/10/2021
+R,"10q11.22 population region (gnomAD-SV_v2.1_DEL_10_110001)",10:47211299-47216400,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/10/2021
+R,"10q11.22 population region (gnomAD-SV_v2.1_DEL_10_110016)",10:47748899-47754600,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/10/2021
+R,"10q11.22 population region (gnomAD-SV_v2.1_DEL_10_110019)",10:47896499-47919300,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/10/2021
+R,"10q11.22 population region (gnomAD-SV_v2.1_DEL_10_110021)",10:47927849-47935000,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/10/2021
+R,"10q11.22 population region (gnomAD-SV_v2.1_DEL_10_110022)",10:47932799-47938200,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/10/2021
+R,"10q11.22 population region (gnomAD-SV_v2.1_DEL_10_110031)",10:48020299-48039225,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/10/2021
+R,"10q11.22 population region (gnomAD-SV_v2.1_DEL_10_110040)",10:48197999-48248000,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/10/2021
+R,"10q11.22 population region (gnomAD-SV_v2.1_DEL_10_110043)",10:48239999-48247800,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/10/2021
+R,"10q11.22 population region (gnomAD-SV_v2.1_DEL_10_110044)",10:48251999-48258000,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/10/2021
+R,"10q11.22 population region (gnomAD-SV_v2.1_DEL_10_110072)",10:48806124-48812000,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/10/2021
+R,"10q11.23 population region (DGV_Gold_Standard_June_2021_gssvL12109)",10:51861706-52000736,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/05/2021
+R,"10q11.23 population region (gnomAD-SV_v2.1_DEL_10_110193)",10:51219499-51231000,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/10/2021
+R,"10q11.23 population region (gnomAD-SV_v2.1_DEL_10_110221)",10:51839699-51845100,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/10/2021
+R,"10q11.23 population region (gnomAD-SV_v2.1_DEL_10_110222)",10:51845699-51850800,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/10/2021
+R,"10q11.23 population region (gnomAD-SV_v2.1_DEL_10_110223)",10:51851849-51857400,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/10/2021
+R,"10q11.23 population region (gnomAD-SV_v2.1_DEL_10_110224)",10:51858299-51864600,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/10/2021
+R,"10q11.23 population region (gnomAD-SV_v2.1_DEL_10_110225)",10:51861999-51894650,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/10/2021
+R,"10q11.23 population region (gnomAD-SV_v2.1_DEL_10_110229)",10:51967199-51974400,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/10/2021
+R,"10q11.23 population region (gnomAD-SV_v2.1_DEL_10_110230)",10:51973199-51981300,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/10/2021
+R,"10q22.1 population region (DGV_Gold_Standard_June_2021_gssvL13247)",10:71280815-71291303,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/05/2021
+R,"10q22.1 population region (DGV_Gold_Standard_June_2021_gssvL13249)",10:71282906-71291092,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/05/2021
+R,"10q22.3 population region (gnomAD-SV_v2.1_DEL_10_112166)",10:81604499-81610800,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/10/2021
+R,"10q22.3q23.2 recurrent region (LCR 3-LCR 4) (Includes BMPR1A)",10:81682843-88739388,"3 (Sufficient Evidence)","1 (Little Evidence)",,,‐,‐,‐,10/13/2016
+R,"11p11.2 (Potocki-Shaffer syndrome) region (includes ALX4, EXT2)",11:43894800-46152450,"3 (Sufficient Evidence)","0 (No Evidence)",,,‐,‐,‐,12/12/2013
+R,"11p13 (WAGR syndrome) region",11:31803509-32510988,"3 (Sufficient Evidence)","1 (Little Evidence)",,,‐,‐,‐,05/24/2016
+R,"11p14.1 population region (DGV_Gold_Standard_June_2021_gssvG6305)",11:29007150-29012087,"0 (No Evidence)","40 (Dosage Sensitivity Unlikely)",,,‐,‐,‐,08/05/2021
+R,"11p15.1 population region (DGV_Gold_Standard_June_2021_gssvG6192)",11:18940205-18963657,"0 (No Evidence)","40 (Dosage Sensitivity Unlikely)",,,‐,‐,‐,08/05/2021
+R,"11p15.1 population region (DGV_Gold_Standard_June_2021_gssvL17400)",11:18941859-18964598,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/05/2021
+R,"11p15.4 population region (DGV_Gold_Standard_June_2021_gssvG5919)",11:3239311-3360988,"0 (No Evidence)","40 (Dosage Sensitivity Unlikely)",,,‐,‐,‐,08/05/2021
+R,"11p15.4 population region (DGV_Gold_Standard_June_2021_gssvG5957)",11:4255965-4278463,"0 (No Evidence)","40 (Dosage Sensitivity Unlikely)",,,‐,‐,‐,08/05/2021
+R,"11p15.4 population region (DGV_Gold_Standard_June_2021_gssvL16732)",11:4264092-4309730,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/05/2021
+R,"11p15.4 population region (DGV_Gold_Standard_June_2021_gssvL16737)",11:4255449-4278126,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/05/2021
+R,"11p15.4 population region (DGV_Gold_Standard_June_2021_gssvL16784)",11:4968688-4980232,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/05/2021
+R,"11p15.4 population region (DGV_Gold_Standard_June_2021_gssvL16881)",11:5873984-5883499,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/05/2021
+R,"11p15.4 population region (DGV_Gold_Standard_June_2021_gssvL16961)",11:7809752-7834885,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/05/2021
+R,"11p15.4 population region (gnomAD-SV_v2.1_DEL_11_116046)",11:4967746-4976658,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/10/2021
+R,"11p15.4 population region (gnomAD-SV_v2.1_DEL_11_116124)",11:5873988-5883493,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/10/2021
+R,"11p15.4 population region (gnomAD-SV_v2.1_DEL_11_116241)",11:7811175-7833378,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/10/2021
+R,"11p15.5 population region (DGV_Gold_Standard_June_2021_gssvL16511)",11:1915245-1937002,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/05/2021
+R,"11q11 population region (DGV_Gold_Standard_June_2021_gssvL19042)",11:55445709-55457776,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/05/2021
+R,"11q11 population region (DGV_Gold_Standard_June_2021_gssvL19045)",11:55434253-55443984,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/05/2021
+R,"11q11 population region (gnomAD-SV_v2.1_DEL_11_119505)",11:55031602-55038540,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/09/2021
+R,"11q11 population region (gnomAD-SV_v2.1_DEL_11_119564)",11:55364275-55444015,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/09/2021
+R,"11q12.2 population region (DGV_Gold_Standard_June_2021_gssvG6800)",11:60966146-61020399,"0 (No Evidence)","40 (Dosage Sensitivity Unlikely)",,,‐,‐,‐,08/04/2021
+R,"11q13.2q13.4 recurrent region (includes SHANK2, FGFs)",11:67763646-71236931,"2 (Emerging Evidence)","0 (No Evidence)",,,‐,‐,‐,01/27/2018
+R,"11q13.4 population region (DGV_Gold_Standard_June_2021_gssvL19865)",11:71850646-71889330,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/05/2021
+R,"11q14.3 population region (gnomAD-SV_v2.1_DEL_11_121860)",11:89762999-89783400,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/09/2021
+R,"11q14.3 population region (gnomAD-SV_v2.1_DUP_11_33042)",11:89520077-89657031,"0 (No Evidence)","40 (Dosage Sensitivity Unlikely)",,,‐,‐,‐,08/09/2021
+R,"11q22.2 population region (DGV_Gold_Standard_June_2021_gssvL21098)",11:102751106-102752862,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/05/2021
+R,"12p11.1 population region (DGV_Gold_Standard_June_2021_gssvL24290)",12:34355893-34361543,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/04/2021
+R,"12p11.2 population region (DGV_Gold_Standard_June_2021_gssvG23340)",21:10704853-10982352,"0 (No Evidence)","40 (Dosage Sensitivity Unlikely)",,,‐,‐,‐,08/03/2021
+R,"12p11.23 population region (DGV_Gold_Standard_June_2021_gssvL23860)",12:27647940-27654731,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/04/2021
+R,"12p11.23 population region (gnomAD-SV_v2.1_DEL_12_126677)",12:27648141-27655163,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/09/2021
+R,"12p13.2 population region (DGV_Gold_Standard_June_2021_gssvL23179)",12:10581251-10597043,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/04/2021
+R,"12p13.2 population region (DGV_Gold_Standard_June_2021_gssvL23223)",12:11191681-11217625,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/04/2021
+R,"12p13.2 population region (DGV_Gold_Standard_June_2021_gssvL23228)",12:11227081-11251139,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/04/2021
+R,"12p13.2 population region (DGV_Gold_Standard_June_2021_gssvL23231)",12:11224984-11240896,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/04/2021
+R,"12p13.2 population region (gnomAD-SV_v2.1_DEL_12_125567)",12:10581544-10597003,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/09/2021
+R,"12p13.2 population region (gnomAD-SV_v2.1_DEL_12_125568)",12:10581599-10587675,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/09/2021
+R,"12p13.2 population region (gnomAD-SV_v2.1_DEL_12_125610)",12:11225999-11250600,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/09/2021
+R,"12p13.31 population region (DGV_Gold_Standard_June_2021_gssvG7792)",12:8558090-8596215,"0 (No Evidence)","40 (Dosage Sensitivity Unlikely)",,,‐,‐,‐,08/04/2021
+R,"12p13.31 population region (DGV_Gold_Standard_June_2021_gssvG7850)",12:8361522-8391789,"0 (No Evidence)","40 (Dosage Sensitivity Unlikely)",,,‐,‐,‐,08/04/2021
+R,"12p13.31 population region (gnomAD-SV_v2.1_DUP_12_33971)",12:8361449-8390896,"0 (No Evidence)","40 (Dosage Sensitivity Unlikely)",,,‐,‐,‐,08/09/2021
+R,"12q12 population region (gnomAD-SV_v2.1_DEL_12_127735)",12:40874766-40876424,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/09/2021
+R,"12q23.3 population region (DGV_Gold_Standard_June_2021_gssvL26928)",12:105369015-105374180,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/04/2021
+R,"13q12.11 population region (DGV_Gold_Standard_June_2021_gssvG9718)",13:21534913-21541123,"0 (No Evidence)","40 (Dosage Sensitivity Unlikely)",,,‐,‐,‐,08/04/2021
+R,"13q12.12 recurrent region (includes SACS, SGCG)",13:23544582-24881361,"0 (No Evidence)","40 (Dosage Sensitivity Unlikely)",,,‐,‐,‐,04/26/2021
+R,"13q21.1 population region (DGV_Gold_Standard_June_2021_gssvL30434)",13:57768508-57786942,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/04/2021
+R,"13q21.33 population region (DGV_Gold_Standard_June_2021_gssvL31119)",13:72476988-72489787,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/04/2021
+R,"14q11.2 population region (DGV_Gold_Standard_June_2021_gssvG10810)",14:19596713-20418095,"0 (No Evidence)","40 (Dosage Sensitivity Unlikely)",,,‐,‐,‐,08/04/2021
+R,"14q11.2 population region (DGV_Gold_Standard_June_2021_gssvG10817)",14:20190229-20426809,"0 (No Evidence)","40 (Dosage Sensitivity Unlikely)",,,‐,‐,‐,08/04/2021
+R,"14q11.2 population region (DGV_Gold_Standard_June_2021_gssvG10827)",14:20335536-20423298,"0 (No Evidence)","40 (Dosage Sensitivity Unlikely)",,,‐,‐,‐,08/04/2021
+R,"14q11.2 population region (DGV_Gold_Standard_June_2021_gssvG10899)",14:19462329-19469848,"0 (No Evidence)","40 (Dosage Sensitivity Unlikely)",,,‐,‐,‐,08/04/2021
+R,"14q11.2 population region (DGV_Gold_Standard_June_2021_gssvL33520)",14:20190699-20425231,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/04/2021
+R,"14q11.2 population region (DGV_Gold_Standard_June_2021_gssvL33589)",14:19462304-19469872,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/04/2021
+R,"14q11.2 population region (gnomAD-SV_v2.1_DEL_14_140616)",14:24467999-24474000,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/09/2021
+R,"14q11.2 region (TCRA region)",14:22111109-23021097,"40 (Dosage Sensitivity Unlikely)","40 (Dosage Sensitivity Unlikely)",,,‐,‐,‐,04/09/2015
+R,"14q11.2 region including CHD8 and SUPT16H",14:21826900-21861987,"2 (Emerging Evidence)","0 (No Evidence)",,,‐,‐,‐,05/09/2012
+R,"14q13.2 population region (DGV_Gold_Standard_June_2021_gssvL34350)",14:35605396-35615320,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/04/2021
+R,"14q32 region associated with UPD(14) phenotypes",14:100394594-101504529,"2 (Emerging Evidence)","0 (No Evidence)",,,‐,‐,‐,05/10/2012
+R,"14q32.33 population region (DGV_Gold_Standard_June_2021_gssvG12097)",14:106118177-106145774,"0 (No Evidence)","40 (Dosage Sensitivity Unlikely)",,,‐,‐,‐,08/04/2021
+R,"14q32.33 population region (DGV_Gold_Standard_June_2021_gssvG12117)",14:106826451-106850917,"0 (No Evidence)","40 (Dosage Sensitivity Unlikely)",,,‐,‐,‐,08/04/2021
+R,"14q32.33 population region (DGV_Gold_Standard_June_2021_gssvG12133)",14:107147166-107164532,"0 (No Evidence)","40 (Dosage Sensitivity Unlikely)",,,‐,‐,‐,08/04/2021
+R,"14q32.33 population region (DGV_Gold_Standard_June_2021_gssvG12150)",14:106805092-106814699,"0 (No Evidence)","40 (Dosage Sensitivity Unlikely)",,,‐,‐,‐,08/04/2021
+R,"14q32.33 population region (DGV_Gold_Standard_June_2021_gssvL37239)",14:106483725-106508484,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/04/2021
+R,"14q32.33 population region (DGV_Gold_Standard_June_2021_gssvL37313)",14:107172848-107183396,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/04/2021
+R,"15q11.2 population region (DGV_Gold_Standard_June_2021_gssvG12224)",15:20388741-22207639,"0 (No Evidence)","40 (Dosage Sensitivity Unlikely)",,,‐,‐,‐,08/04/2021
+R,"15q11.2 population region (DGV_Gold_Standard_June_2021_gssvG12359)",15:21145101-21164300,"0 (No Evidence)","40 (Dosage Sensitivity Unlikely)",,,‐,‐,‐,08/04/2021
+R,"15q11.2 population region (gnomAD-SV_v2.1_DEL_15_145826)",15:20729174-20745525,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/09/2021
+R,"15q11.2 population region (gnomAD-SV_v2.1_DEL_15_145837)",15:21042049-21056300,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/09/2021
+R,"15q11.2 recurrent region (BP1-BP2) (includes NIPA1)",15:22832519-23090897,"3 (Sufficient Evidence)","40 (Dosage Sensitivity Unlikely)",,,‐,‐,‐,04/12/2021
+R,"15q11.2q13 recurrent (PWS/AS) region (Class 1, BP1-BP3)",15:22832519-28379874,"3 (Sufficient Evidence)","3 (Sufficient Evidence)",,,‐,‐,‐,11/26/2013
+R,"15q11.2q13 recurrent (PWS/AS) region (Class 2,BP2-BP3)",15:23747996-28379874,"3 (Sufficient Evidence)","3 (Sufficient Evidence)",,,‐,‐,‐,11/26/2013
+R,"15q13 recurrent region (BP3-BP4) (includes APBA2)",15:29156959-30368990,"0 (No Evidence)","0 (No Evidence)",,,‐,‐,‐,03/09/2020
+R,"15q13.2 population region (DGV_Gold_Standard_June_2021_gssvG12633)",15:30488097-30796070,"0 (No Evidence)","40 (Dosage Sensitivity Unlikely)",,,‐,‐,‐,08/04/2021
+R,"15q13.2 population region (gnomAD-SV_v2.1_DEL_15_146428)",15:30381948-30438500,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/09/2021
+R,"15q13.2 population region (gnomAD-SV_v2.1_DEL_15_146452)",15:30692999-30725200,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/17/2021
+R,"15q13.2 population region (gnomAD-SV_v2.1_DEL_15_146453)",15:30432998-30883100,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/09/2021
+R,"15q13.2 population region (gnomAD-SV_v2.1_DEL_15_146464)",15:30825199-30853100,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/17/2021
+R,"15q13.2 population region (gnomAD-SV_v2.1_DEL_15_146467)",15:30847949-30883100,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/17/2021
+R,"15q13.3 population region (gnomAD-SV_v2.1_DEL_15_146609)",15:32692999-32698000,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/09/2021
+R,"15q13.3 population region (gnomAD-SV_v2.1_DEL_15_146612)",15:32743999-32755100,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/09/2021
+R,"15q13.3 population region (gnomAD-SV_v2.1_DEL_15_146614)",15:32774999-32780000,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/09/2021
+R,"15q13.3 population region (gnomAD-SV_v2.1_DEL_15_146625)",15:32864999-32898000,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/09/2021
+R,"15q13.3 population region (gnomAD-SV_v2.1_DEL_15_146627)",15:32886199-32898000,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/17/2021
+R,"15q13.3 population region (gnomAD-SV_v2.1_DUP_15_39790)",15:32690774-32734250,"0 (No Evidence)","40 (Dosage Sensitivity Unlikely)",,,‐,‐,‐,08/09/2021
+R,"15q13.3 recurrent region (BP4-BP5) (includes CHRNA7)",15:31192889-32445405,"3 (Sufficient Evidence)","1 (Little Evidence)",,,‐,‐,‐,04/28/2018
+R,"15q13.3 recurrent region (D-CHRNA7 to BP5) (includes CHRNA7, OTUD7A)",15:32019621-32445405,"3 (Sufficient Evidence)","40 (Dosage Sensitivity Unlikely)",,,‐,‐,‐,05/10/2018
+R,"15q14 population region (gnomAD-SV_v2.1_DEL_15_146738)",15:34710126-34856557,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/09/2021
+R,"15q14 population region (gnomAD-SV_v2.1_DEL_15_146739)",15:34726357-34872885,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/09/2021
+R,"15q24 recurrent region (LCR A-LCR C)",15:72963715-75508312,"3 (Sufficient Evidence)","1 (Little Evidence)",,,‐,‐,‐,01/03/2020
+R,"15q24 recurrent region (LCR A-LCR D) (includes SIN3A)",15:72963715-75972909,"3 (Sufficient Evidence)","1 (Little Evidence)",,,‐,‐,‐,08/31/2018
+R,"15q24 recurrent region (LCR C-LCR D) (includes SIN3A)","15: 75631787-75972909","3 (Sufficient Evidence)","0 (No Evidence)",,,‐,‐,‐,01/13/2020
+R,"15q25.2 recurrent region (proximal LCR B-LCR C)",15:83213988-84714733,"3 (Sufficient Evidence)","0 (No Evidence)",,,‐,‐,‐,10/13/2016
+R,"15q25.2q25.3 recurrent region (distal, LCR C-LCR D)",15:85139652-85713001,"1 (Little Evidence)","0 (No Evidence)",,,‐,‐,‐,06/26/2020
+R,"16p11.2 population region (gnomAD-SV_v2.1_DEL_16_153568)",16:28715099-28771000,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/04/2021
+R,"16p11.2 population region (gnomAD-SV_v2.1_DEL_16_153573)",16:28764999-28772000,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/04/2021
+R,"16p11.2 population region (gnomAD-SV_v2.1_DEL_16_153860)",16:32655999-32802000,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/04/2021
+R,"16p11.2 population region (gnomAD-SV_v2.1_DUP_16_42022)",16:32019999-32096000,"0 (No Evidence)","40 (Dosage Sensitivity Unlikely)",,,‐,‐,‐,08/04/2021
+R,"16p11.2 recurrent region (distal, BP2-BP3) (includes SH2B1)",16:28822635-29046499,"3 (Sufficient Evidence)","1 (Little Evidence)",,,‐,‐,‐,03/09/2017
+R,"16p11.2 recurrent region (proximal, BP4-BP5) (includes TBX6)",16:29649997-30199852,"3 (Sufficient Evidence)","3 (Sufficient Evidence)",,,‐,‐,‐,02/09/2017
+R,"16p12.1 population region (DGV_Gold_Standard_June_2021_gssvL43366)",16:25066146-25137378,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/04/2021
+R,"16p12.2 population region (DGV_Gold_Standard_June_2021_gssvG14372)",16:21512076-21595577,"0 (No Evidence)","40 (Dosage Sensitivity Unlikely)",,,‐,‐,‐,08/04/2021
+R,"16p12.2 recurrent region (distal)(includes OTOA)",16:21570113-21740423,"30 (Autosomal Recessive)","40 (Dosage Sensitivity Unlikely)",,,‐,‐,‐,11/03/2019
+R,"16p12.2 recurrent region (proximal) (includes EEF2K, CDR2)",16:21948445-22430804,"2 (Emerging Evidence)","0 (No Evidence)",,,‐,‐,‐,03/23/2018
+R,"16p12.3 population region (gnomAD-SV_v2.1_DEL_16_152900)",16:18414999-18421000,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/12/2021
+R,"16p13.11 population region (gnomAD-SV_v2.1_DEL_16_152730)",16:16329599-16364350,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/23/2021
+R,"16p13.11 recurrent region (BP2-BP3) (includes MYH11)",16:15511711-16292265,"3 (Sufficient Evidence)","2 (Emerging Evidence)",,,‐,‐,‐,04/13/2021
+R,"16p13.12 population region (gnomAD-SV_v2.1_DEL_16_152600)",16:14782999-14853150,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/09/2021
+R,"16p13.3 population region (DGV_Gold_Standard_June_2021_gssvL41949)",16:1289937-1295280,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/04/2021
+R,"16p13.3 population region (gnomAD-SV_v2.1_DEL_16_151010)",16:59999-65000,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/09/2021
+R,"16p13.3 region (includes CREBBP)",16:3775056-3930121,"3 (Sufficient Evidence)","1 (Little Evidence)",,,‐,‐,‐,06/09/2016
+R,"16q22.1 population region (gnomAD-SV_v2.1_DUP_16_42449)",16:70094243-70242956,"0 (No Evidence)","40 (Dosage Sensitivity Unlikely)",,,‐,‐,‐,08/04/2021
+R,"16q22.2 population region (DGV_Gold_Standard_June_2021_gssvG15245)",16:72088515-72116064,"0 (No Evidence)","40 (Dosage Sensitivity Unlikely)",,,‐,‐,‐,08/04/2021
+R,"16q23.1 population region (DGV_Gold_Standard_June_2021_gssvG15270)",16:74387937-74459162,"0 (No Evidence)","40 (Dosage Sensitivity Unlikely)",,,‐,‐,‐,08/04/2021
+R,"17p11.2 population region (DGV_Gold_Standard_June_2021_gssvG16012)",17:16660760-16707833,"0 (No Evidence)","40 (Dosage Sensitivity Unlikely)",,,‐,‐,‐,08/04/2021
+R,"17p11.2 population region (DGV_Gold_Standard_June_2021_gssvG16017)",17:16711572-16724682,"0 (No Evidence)","40 (Dosage Sensitivity Unlikely)",,,‐,‐,‐,08/04/2021
+R,"17p11.2 population region (DGV_Gold_Standard_June_2021_gssvG16067)",17:18361739-18423872,"0 (No Evidence)","40 (Dosage Sensitivity Unlikely)",,,‐,‐,‐,08/04/2021
+R,"17p11.2 population region (DGV_Gold_Standard_June_2021_gssvG16095)",17:18359814-18376676,"0 (No Evidence)","40 (Dosage Sensitivity Unlikely)",,,‐,‐,‐,08/04/2021
+R,"17p11.2 population region (DGV_Gold_Standard_June_2021_gssvL48375)",17:16711606-16724681,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/04/2021
+R,"17p11.2 population region (DGV_Gold_Standard_June_2021_gssvL48476)",17:18418589-18465114,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/04/2021
+R,"17p11.2 population region (DGV_Gold_Standard_June_2021_gssvL48488)",17:18359790-18376723,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/04/2021
+R,"17p11.2 population region (gnomAD-SV_v2.1_DEL_17_159047)",17:18329998-18465150,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/04/2021
+R,"17p11.2 population region (gnomAD-SV_v2.1_DEL_17_159095)",17:19014999-19054000,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/04/2021
+R,"17p11.2 recurrent (SMS/PLS) region (includes RAI1)",17:16810028-20213202,"3 (Sufficient Evidence)","3 (Sufficient Evidence)",,,‐,‐,‐,11/21/2013
+R,"17p12 recurrent (HNPP/CMT1A) region (includes PMP22)",17:14097915-15422952,"3 (Sufficient Evidence)","3 (Sufficient Evidence)",,,‐,‐,‐,10/13/2016
+R,"17p13.3 (Miller-Dieker syndrome) region (includes YWHAE and PAFAH1B1)",17:1247833-2588909,"3 (Sufficient Evidence)","3 (Sufficient Evidence)",,,‐,‐,‐,11/10/2016
+R,"17q11.2 recurrent region (includes NF1)",17:29097069-30264027,"3 (Sufficient Evidence)","2 (Emerging Evidence)",,,‐,‐,‐,10/12/2020
+R,"17q12 population region (DGV_Gold_Standard_June_2021_gssvG16427)",17:34502940-34524192,"0 (No Evidence)","40 (Dosage Sensitivity Unlikely)",,,‐,‐,‐,08/04/2021
+R,"17q12 population region (DGV_Gold_Standard_June_2021_gssvL49126)",17:34509779-34551554,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/04/2021
+R,"17q12 recurrent (RCAD syndrome) region (includes HNF1B)",17:34815072-36192489,"3 (Sufficient Evidence)","3 (Sufficient Evidence)",,,‐,‐,‐,08/10/2015
+R,"17q21.2 population region (DGV_Gold_Standard_June_2021_gssvG16538)",17:39531718-39539732,"0 (No Evidence)","40 (Dosage Sensitivity Unlikely)",,,‐,‐,‐,08/04/2021
+R,"17q21.2 population region (DGV_Gold_Standard_June_2021_gssvL49379)",17:39383317-39396444,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/04/2021
+R,"17q21.2 population region (DGV_Gold_Standard_June_2021_gssvL49383)",17:39384291-39392558,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/04/2021
+R,"17q21.2 population region (DGV_Gold_Standard_June_2021_gssvL49384)",17:39422988-39430527,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/04/2021
+R,"17q21.2 population region (DGV_Gold_Standard_June_2021_gssvL49386)",17:39429150-39433594,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/04/2021
+R,"17q21.2 population region (gnomAD-SV_v2.1_DEL_17_160287)",17:39383999-39395000,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/04/2021
+R,"17q21.2 population region (gnomAD-SV_v2.1_DEL_17_160290)",17:39421793-39432145,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/04/2021
+R,"17q21.2 population region (gnomAD-SV_v2.1_DUP_17_44064)",17:39531966-39539289,"0 (No Evidence)","40 (Dosage Sensitivity Unlikely)",,,‐,‐,‐,08/04/2021
+R,"17q21.3 recurrent region (includes KANSL1)",17:43705166-44164880,"3 (Sufficient Evidence)","1 (Little Evidence)",,,‐,‐,‐,08/10/2020
+R,"17q21.31 population region (gnomAD-SV_v2.1_DEL_17_160658)",17:44368999-44380000,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/04/2021
+R,"17q21.31 population region (gnomAD-SV_v2.1_DEL_17_160659)",17:44381699-44387000,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/04/2021
+R,"17q21.31 population region (gnomAD-SV_v2.1_DEL_17_160662)",17:44399099-44405700,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/04/2021
+R,"17q21.31 population region (gnomAD-SV_v2.1_DEL_17_160663)",17:44401199-44418450,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/04/2021
+R,"17q21.31 population region (gnomAD-SV_v2.1_DEL_17_160664)",17:44403899-44409900,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/04/2021
+R,"17q21.31 population region (gnomAD-SV_v2.1_DEL_17_160670)",17:44637999-44653000,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/04/2021
+R,"17q23.1q23.2 recurrent region (includes TBX2, TBX4)",17:58113002-60275809,"3 (Sufficient Evidence)","2 (Emerging Evidence)",,,‐,‐,‐,11/20/2018
+R,"18p11.21 population region (DGV_Gold_Standard_June_2021_gssvG17388)",18:14432553-14565138,"0 (No Evidence)","40 (Dosage Sensitivity Unlikely)",,,‐,‐,‐,08/04/2021
+R,"18p11.22 population region (DGV_Gold_Standard_June_2021_gssvL52196)",18:9784172-9793224,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/04/2021
+R,"18p11.31 population region (DGV_Gold_Standard_June_2021_gssvL51911)",18:3568883-3571730,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/04/2021
+R,"18q11.2 population region (DGV_Gold_Standard_June_2021_gssvL52661)",18:23747759-23751695,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/04/2021
+R,"18q21.1 population region (DGV_Gold_Standard_June_2021_gssvG17872)",18:44542290-44558084,"0 (No Evidence)","40 (Dosage Sensitivity Unlikely)",,,‐,‐,‐,08/04/2021
+R,"19p12 population region (DGV_Gold_Standard_June_2021_gssvL57316)",19:20594811-20725405,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/04/2021
+R,"19p12 population region (DGV_Gold_Standard_June_2021_gssvL57428)",19:22087099-23141940,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/04/2021
+R,"19p13.12 population region (DGV_Gold_Standard_June_2021_gssvL57062)",19:15727731-15787718,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/04/2021
+R,"19p13.2 population region (gnomAD-SV_v2.1_DUP_19_46817)",19:7019174-7060500,"0 (No Evidence)","40 (Dosage Sensitivity Unlikely)",,,‐,‐,‐,08/04/2021
+R,"19q13.12 population region (gnomAD-SV_v2.1_DEL_19_172006)",19:35850999-35863275,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/04/2021
+R,"19q13.3 region (PSG gene cluster)",19:43242796-43741310,"40 (Dosage Sensitivity Unlikely)","40 (Dosage Sensitivity Unlikely)",,,‐,‐,‐,03/13/2014
+R,"19q13.31 population region (gnomAD-SV_v2.1_DEL_19_172625)",19:43700966-43764809,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/04/2021
+R,"19q13.31 population region (gnomAD-SV_v2.1_DEL_19_172626)",19:43700999-43716000,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/04/2021
+R,"19q13.32 population region (DGV_Gold_Standard_June_2021_gssvL58890)",19:46622342-46628475,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/04/2021
+R,"19q13.41 population region (gnomAD-SV_v2.1_DEL_19_173443)",19:52127999-52139400,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/04/2021
+R,"19q13.41 population region (gnomAD-SV_v2.1_DEL_19_173445)",19:52134299-52149000,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/04/2021
+R,"19q13.41 population region (gnomAD-SV_v2.1_DEL_19_173549)",19:53316224-53323725,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/04/2021
+R,"19q13.42 population region (DGV_Gold_Standard_June_2021_gssvG19479)",19:56280630-56289562,"0 (No Evidence)","40 (Dosage Sensitivity Unlikely)",,,‐,‐,‐,08/04/2021
+R,"19q13.42 population region (DGV_Gold_Standard_June_2021_gssvL59370)",19:53939389-53976651,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/04/2021
+R,"19q13.42 population region (gnomAD-SV_v2.1_DEL_19_173749)",19:54800855-54807620,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/04/2021
+R,"19q13.42 population region (gnomAD-SV_v2.1_DEL_19_173800)",19:55245599-55250700,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/04/2021
+R,"19q13.42 population region (gnomAD-SV_v2.1_DEL_19_173801)",19:55250753-55267130,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/04/2021
+R,"19q13.42 population region (gnomAD-SV_v2.1_DEL_19_173802)",19:55251599-55257000,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/04/2021
+R,"19q13.42 population region (gnomAD-SV_v2.1_DEL_19_173803)",19:55256999-55289000,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/04/2021
+R,"19q13.42 population region (gnomAD-SV_v2.1_DEL_19_173805)",19:55274849-55281600,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/04/2021
+R,"19q13.42 population region (gnomAD-SV_v2.1_DEL_19_173806)",19:55277999-55288000,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/04/2021
+R,"19q13.42 population region (gnomAD-SV_v2.1_DEL_19_173807)",19:55285999-55293000,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/03/2021
+R,"19q13.42 population region (gnomAD-SV_v2.1_DEL_19_173809)",19:55292999-55298000,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/03/2021
+R,"19q13.42 population region (gnomAD-SV_v2.1_DEL_19_173811)",19:55301499-55324000,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/03/2021
+R,"19q13.42 population region (gnomAD-SV_v2.1_DEL_19_173812)",19:55314899-55323600,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/03/2021
+R,"19q13.42 population region (gnomAD-SV_v2.1_DEL_19_173816)",19:55360499-55370000,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/03/2021
+R,"19q13.42 population region (gnomAD-SV_v2.1_DEL_19_173817)",19:55367999-55373100,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/03/2021
+R,"1p13.3 population region (DGV_Gold_Standard_June_2021_gssvG1423)",1:108917312-109000328,"0 (No Evidence)","40 (Dosage Sensitivity Unlikely)",,,‐,‐,‐,08/06/2021
+R,"1p13.3 population region (gnomAD-SV_v2.1_DEL_1_6959)",1:108923349-108996100,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/06/2021
+R,"1p13.3 population region (gnomAD-SV_v2.1_DEL_1_7022)",1:110230194-110254581,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/06/2021
+R,"1p21.1 population region (gnomAD-SV_v2.1_DUP_1_1884)",1:104190999-104303200,"0 (No Evidence)","40 (Dosage Sensitivity Unlikely)",,,‐,‐,‐,08/06/2021
+R,"1p31.3 population region (DGV_Gold_Standard_June_2021_gssvL2940)",1:62654661-62657211,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/06/2021
+R,"1p31.3 population region (DGV_Gold_Standard_June_2021_gssvL3013)",1:64839912-64851868,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/06/2021
+R,"1p36 terminal region (includes GABRD)",1:834083-6289973,"3 (Sufficient Evidence)","2 (Emerging Evidence)",,,‐,‐,‐,05/31/2016
+R,"1p36.11 population region (gnomAD-SV_v2.1_DEL_1_1834)",1:24283999-24291000,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/12/2021
+R,"1p36.11 population region (gnomAD-SV_v2.1_DEL_1_1937)",1:25592799-25651000,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/17/2021
+R,"1p36.11 population region (gnomAD-SV_v2.1_DEL_1_1938)",1:25593699-25610200,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/12/2021
+R,"1p36.11 population region (gnomAD-SV_v2.1_DEL_1_1939)",1:25613999-25621000,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/17/2021
+R,"1p36.11 population region (gnomAD-SV_v2.1_DEL_1_1941)",1:25630899-25636000,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/17/2021
+R,"1p36.11 population region (gnomAD-SV_v2.1_DEL_1_1943)",1:25639499-25650000,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/12/2021
+R,"1p36.11 population region (gnomAD-SV_v2.1_DEL_1_1944)",1:25644399-25649500,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/17/2021
+R,"1p36.11 population region (gnomAD-SV_v2.1_DEL_1_1945)",1:25654999-25661350,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/12/2021
+R,"1p36.12 population region (DGV_Gold_Standard_June_2021_gssvL1420)",1:22313123-22335712,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/06/2021
+R,"1p36.13 population region (DGV_Gold_Standard_June_2021_gssvL1195)",1:17009445-17012777,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/06/2021
+R,"1p36.21 population region (DGV_Gold_Standard_June_2021_gssvG371)",1:12897609-12922238,"0 (No Evidence)","40 (Dosage Sensitivity Unlikely)",,,‐,‐,‐,08/06/2021
+R,"1p36.21 population region (DGV_Gold_Standard_June_2021_gssvL1108)",1:16151690-16155602,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/06/2021
+R,"1p36.21 population region (DGV_Gold_Standard_June_2021_gssvL1109)",1:16152667-16155517,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/06/2021
+R,"1p36.21 population region (DGV_Gold_Standard_June_2021_gssvL889)",1:13692847-13774442,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/06/2021
+R,"1p36.21 population region (DGV_Gold_Standard_June_2021_gssvL891)",1:12886641-12942069,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/06/2021
+R,"1p36.21 population region (DGV_Gold_Standard_June_2021_gssvL905)",1:12899395-12924283,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/06/2021
+R,"1p36.21 population region (gnomAD-SV_v2.1_DEL_1_1085)",1:12896424-12930275,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/06/2021
+R,"1p36.21 population region (gnomAD-SV_v2.1_DEL_1_1089)",1:12949999-12966000,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/06/2021
+R,"1p36.21 population region (gnomAD-SV_v2.1_DEL_1_1094)",1:12989199-12998900,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/06/2021
+R,"1p36.21 population region (gnomAD-SV_v2.1_DEL_1_1100)",1:13043099-13052800,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/06/2021
+R,"1p36.21 population region (gnomAD-SV_v2.1_DUP_1_507)",1:12894999-12940000,"0 (No Evidence)","40 (Dosage Sensitivity Unlikely)",,,‐,‐,‐,08/06/2021
+R,"1p36.33 population region ((DGV_Gold_Standard_June_2021_gssvG23))",1:713039-756009,"0 (No Evidence)","40 (Dosage Sensitivity Unlikely)",,,‐,‐,‐,08/06/2021
+R,"1p36.33 population region (DGV_Gold_Standard_June_2021_gssvG23)",1:713039-756009,"0 (No Evidence)","40 (Dosage Sensitivity Unlikely)",,,‐,‐,‐,08/06/2021
+R,"1p36.33 population region (gnomAD-SV_v2.1_DEL_1_11)",1:363999-401750,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/06/2021
+R,"1p36.33 population region (gnomAD-SV_v2.1_DEL_1_195)",1:1640999-1647000,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/06/2021
+R,"1q21.1 population region (gnomAD-SV_v2.1_DEL_1_7699)",1:146025999-146089000,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/06/2021
+R,"1q21.1 recurrent (TAR syndrome) region (proximal, BP2-BP3) (includes RBM8A)",1:145386507-145748064,"1 (Little Evidence)","1 (Little Evidence)",,,‐,‐,‐,05/18/2017
+R,"1q21.1 recurrent region (BP3-BP4, distal) (includes GJA5)",1:146577486-147394506,"3 (Sufficient Evidence)","3 (Sufficient Evidence)",,,‐,‐,‐,04/14/2016
+R,"1q21.2 population region (DGV_Gold_Standard_June_2021_gssvL5122)",1:147856152-147913592,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/06/2021
+R,"1q21.2 population region (DGV_Gold_Standard_June_2021_gssvL5133)",1:149152064-149204067,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/06/2021
+R,"1q21.2 population region (DGV_Gold_Standard_June_2021_gssvL5166)",1:149207851-149218151,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/06/2021
+R,"1q21.2 population region (gnomAD-SV_v2.1_DEL_1_7778)",1:147433599-147455000,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/06/2021
+R,"1q21.2 population region (gnomAD-SV_v2.1_DEL_1_7781)",1:147559999-147630500,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/06/2021
+R,"1q21.2 population region (gnomAD-SV_v2.1_DEL_1_7795)",1:147931899-147982900,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/06/2021
+R,"1q21.2 population region (gnomAD-SV_v2.1_DEL_1_7798)",1:147944999-147955500,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/06/2021
+R,"1q21.2 population region (gnomAD-SV_v2.1_DEL_1_7859)",1:149368999-149433200,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/06/2021
+R,"1q21.2 population region (gnomAD-SV_v2.1_DEL_1_7863)",1:149396649-149406100,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/06/2021
+R,"1q21.2 region (polymorphic region)(non-unique; also maps to chromosomes 16, 7, and others in GRCh38)",1:148867551-149768855,"40 (Dosage Sensitivity Unlikely)","40 (Dosage Sensitivity Unlikely)",,,‐,‐,‐,10/22/2020
+R,"1q21.3 population region (DGV_Gold_Standard_June_2021_gssvG2465)",1:152761495-152773537,"0 (No Evidence)","40 (Dosage Sensitivity Unlikely)",,,‐,‐,‐,08/06/2021
+R,"1q21.3 population region (DGV_Gold_Standard_June_2021_gssvL5433)",1:152554926-152575348,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/06/2021
+R,"1q21.3 population region (gnomAD-SV_v2.1_DEL_1_8075)",1:152555541-152587740,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/06/2021
+R,"1q21.3 population region (gnomAD-SV_v2.1_DEL_1_8087)",1:152760519-152771091,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/06/2021
+R,"1q23.3 population region (DGV_Gold_Standard_June_2021_gssvL5778)",1:161570323-161598180,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/06/2021
+R,"1q23.3 population region (gnomAD-SV_v2.1_DEL_1_8646)",1:161529258-161610923,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/06/2021
+R,"1q24.2 population region (DGV_Gold_Standard_June_2021_gssvL5980)",1:168024558-168025732,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/06/2021
+R,"1q25.2 population region (gnomAD-SV_v2.1_DEL_1_9549)",1:179455597-179458296,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/06/2021
+R,"1q32.2 population region (gnomAD-SV_v2.1_DEL_1_11282)",1:207708749-207718050,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/16/2021
+R,"1q41 population region (DGV_Gold_Standard_June_2021_gssvL7905)",1:222373208-222381462,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/06/2021
+R,"1q43q44 terminal region (includes AKT3)",1:243287730-245318287,"3 (Sufficient Evidence)","0 (No Evidence)",,,‐,‐,‐,10/12/2016
+R,"1q44 population region (DGV_Gold_Standard_June_2021_gssvL8766)",1:248756880-248797809,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/06/2021
+R,"1q44 population region (DGV_Gold_Standard_June_2021_gssvL8958)",1:248755655-248758478,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/06/2021
+R,"1q44 population region (gnomAD-SV_v2.1_DEL_1_13885)",1:248712454-248757403,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/06/2021
+R,"1q44 population region (gnomAD-SV_v2.1_DEL_1_13888)",1:248728999-248743000,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/06/2021
+R,"1q44 population region (gnomAD-SV_v2.1_DEL_1_13889)",1:248730999-248798200,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/06/2021
+R,"1q44 population region (gnomAD-SV_v2.1_DEL_1_13890)",1:248737999-248744000,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/06/2021
+R,"1q44 population region (gnomAD-SV_v2.1_DEL_1_13898)",1:248806699-248819725,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/06/2021
+R,"1q44 population region (gnomAD-SV_v2.1_DUP_1_3816)",1:248619999-248647000,"0 (No Evidence)","40 (Dosage Sensitivity Unlikely)",,,‐,‐,‐,08/06/2021
+R,"20p11.22 population region (DGV_Gold_Standard_June_2021_gssvL71898)",20:21486525-21496720,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/04/2021
+R,"20q11.21 population region (DGV_Gold_Standard_June_2021_gssvL72187)",20:29509040-29536079,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/04/2021
+R,"21q11.2 population region (DGV_Gold_Standard_June_2021_gssvL74506)",21:14957505-15202003,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/04/2021
+R,"21q11.2 population region (gnomAD-SV_v2.1_DEL_21_178681)",21:14980399-14986100,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/03/2021
+R,"21q11.2 population region (gnomAD-SV_v2.1_DEL_21_178682)",21:14995199-15001200,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/03/2021
+R,"21q11.2 population region (gnomAD-SV_v2.1_DEL_21_178683)",21:15012799-15034700,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/03/2021
+R,"21q22.3 population region (DGV_Gold_Standard_June_2021_gssvL75982)",21:44969018-44974013,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/04/2021
+R,"21q22.3 population region (DGV_Gold_Standard_June_2021_gssvL76000)",21:44970333-44971747,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/04/2021
+R,"21q22.3 population region (gnomAD-SV_v2.1_DEL_21_181010)",21:47580927-47582908,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/03/2021
+R,"22q11.2 recurrent (DGS/VCFS) region (proximal, A-B) (includes TBX1)",22:18912231-20287208,"3 (Sufficient Evidence)","3 (Sufficient Evidence)",,,‐,‐,‐,08/31/2018
+R,"22q11.2 recurrent (DGS/VCFS) region (proximal, A-D) (includes TBX1)",22:18912231-21465672,"3 (Sufficient Evidence)","3 (Sufficient Evidence)",,,‐,‐,‐,08/31/2018
+R,"22q11.2 recurrent region (central, B/C-D) (includes CRKL)",22:20731986-21465672,"2 (Emerging Evidence)","1 (Little Evidence)",,,‐,‐,‐,09/14/2017
+R,"22q11.2 recurrent region (distal type I, D-E/F)",22:21917117-23649111,"3 (Sufficient Evidence)","3 (Sufficient Evidence)",,,‐,‐,‐,03/12/2015
+R,"22q11.21 population region (DGV_Gold_Standard_June_2021_gssvL76981)",22:20428070-20499197,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/03/2021
+R,"22q11.21 population region (DGV_Gold_Standard_June_2021_gssvL77047)",22:21812558-21916568,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/03/2021
+R,"22q11.21 population region (DGV_Gold_Standard_June_2021_gssvL77049)",22:21711480-21742055,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/03/2021
+R,"22q11.21 population region (DGV_Gold_Standard_June_2021_gssvL77050)",22:21866876-21909287,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/03/2021
+R,"22q11.21 population region (gnomAD-SV_v2.1_DEL_22_181316)",22:18738599-18747000,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/03/2021
+R,"22q11.21 population region (gnomAD-SV_v2.1_DEL_22_181446)",22:20366424-20371500,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/03/2021
+R,"22q11.21 population region (gnomAD-SV_v2.1_DEL_22_181452)",22:20451599-20457600,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/03/2021
+R,"22q11.21 population region (gnomAD-SV_v2.1_DEL_22_181459)",22:20693999-20699000,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/03/2021
+R,"22q11.21 population region (gnomAD-SV_v2.1_DEL_22_181532)",22:21562199-21569400,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/03/2021
+R,"22q11.21 recurrent (Cat eye syndrome) region (includes CECR2)",22:17392953-18591860,"0 (No Evidence)","3 (Sufficient Evidence)",,,‐,‐,‐,02/27/2014
+R,"22q11.22 population region (DGV_Gold_Standard_June_2021_gssvL77120)",22:23223448-23238992,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/03/2021
+R,"22q11.23 population region (DGV_Gold_Standard_June_2021_gssvG24415)",22:25703259-25785235,"0 (No Evidence)","40 (Dosage Sensitivity Unlikely)",,,‐,‐,‐,08/03/2021
+R,"22q11.23 population region (DGV_Gold_Standard_June_2021_gssvL77238)",22:24360812-24402386,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/03/2021
+R,"22q11.23 population region (DGV_Gold_Standard_June_2021_gssvL77244)",22:24314289-24334833,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/03/2021
+R,"22q11.23 population region (gnomAD-SV_v2.1_DEL_22_181670)",22:24274143-24311297,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/03/2021
+R,"22q11.23 population region (gnomAD-SV_v2.1_DEL_22_181679)",22:24315999-24323000,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/03/2021
+R,"22q11.23 population region (gnomAD-SV_v2.1_DEL_22_181680)",22:24324299-24334200,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/03/2021
+R,"22q11.23 population region (gnomAD-SV_v2.1_DEL_22_181682)",22:24344399-24397000,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/03/2021
+R,"22q13.1 population region (gnomAD-SV_v2.1_DEL_22_182715)",22:39358308-39388415,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/03/2021
+R,"2p11.2 population region (DGV_Gold_Standard_June_2021_gssvL64414)",2:90005834-90052218,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/06/2021
+R,"2p11.2 population region (DGV_Gold_Standard_June_2021_gssvL64418)",2:90044551-90102805,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/06/2021
+R,"2p11.2 population region (DGV_Gold_Standard_June_2021_gssvL64421)",2:89459244-89512939,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/06/2021
+R,"2p11.2 population region (DGV_Gold_Standard_June_2021_gssvL64445)",2:90249376-90275932,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/06/2021
+R,"2p11.2 population region (DGV_Gold_Standard_June_2021_gssvL64458)",2:90044437-90061011,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/06/2021
+R,"2p11.2 population region (DGV_Gold_Standard_June_2021_gssvL64514)",2:90160287-90163570,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/06/2021
+R,"2p11.2 population region (gnomAD-SV_v2.1_DEL_2_19888)",2:87242199-87253600,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/06/2021
+R,"2p15p16.1 region (includes BCL11A)",2:59139200-62488871,"3 (Sufficient Evidence)","1 (Little Evidence)",,,‐,‐,‐,06/09/2016
+R,"2p21 region (includes PREPL and SLC3A1)",2:44410272-44589641,"30 (Autosomal Recessive)","0 (No Evidence)",,,‐,‐,‐,03/21/2012
+R,"2p24.3 MYCN-DDX1 duplication region",2:15708677-16185337,"Not Yet Evaluated","2 (Emerging Evidence)",,,‐,‐,‐,08/07/2017
+R,"2q11.2 recurrent region (includes ARID5A, LMAN2L)",2:96739012-97671429,"1 (Little Evidence)","1 (Little Evidence)",,,‐,‐,‐,02/28/2020
+R,"2q13 recurrent region (includes BCL2L11)",2:111392193-113104742,"2 (Emerging Evidence)","2 (Emerging Evidence)",,,‐,‐,‐,06/23/2018
+R,"2q13 recurrent region (includes NPHP1)",2:110862108-110983703,"30 (Autosomal Recessive)","40 (Dosage Sensitivity Unlikely)",,,‐,‐,‐,02/25/2016
+R,"2q21.1 population region (DGV_Gold_Standard_June_2021_gssvL66075)",2:130793882-130823249,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/06/2021
+R,"2q21.1 population region (gnomAD-SV_v2.1_DEL_2_22133)",2:130953999-130959000,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/06/2021
+R,"2q21.1 population region (gnomAD-SV_v2.1_DEL_2_22135)",2:130954938-130957387,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/06/2021
+R,"2q21.1 population region (gnomAD-SV_v2.1_DEL_2_22155)",2:131236999-131242000,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/06/2021
+R,"2q21.1 population region (gnomAD-SV_v2.1_DEL_2_22156)",2:131248899-131254600,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/06/2021
+R,"2q21.1 population region (gnomAD-SV_v2.1_DEL_2_22163)",2:131412799-131430000,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/06/2021
+R,"2q21.1 recurrent region (includes ARHGEF4, GPR148)",2:131477509-131929693,"1 (Little Evidence)","0 (No Evidence)",,,‐,‐,‐,09/30/2019
+R,"2q21.2 population region (gnomAD-SV_v2.1_DEL_2_22275)",2:132519999-132529000,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/06/2021
+R,"2q21.2 population region (gnomAD-SV_v2.1_DUP_2_6167)",2:132853576-133213563,"0 (No Evidence)","40 (Dosage Sensitivity Unlikely)",,,‐,‐,‐,08/06/2021
+R,"2q37.3 population region (DGV_Gold_Standard_June_2021_gssvL70815)",2:242872862-243012181,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/06/2021
+R,"2q37.3 terminal region (includes HDAC4)",2:239954693-242930600,"3 (Sufficient Evidence)","0 (No Evidence)",,,‐,‐,‐,06/13/2016
+R,"3 copies: 15q telomere",15:102161480-102521392,"0 (No Evidence)","40 (Dosage Sensitivity Unlikely)",,,‐,‐,‐,11/26/2013
+R,"3 copies: 16p centromere",16:34202088-35147508,"40 (Dosage Sensitivity Unlikely)","40 (Dosage Sensitivity Unlikely)",,,‐,‐,‐,08/01/2013
+R,"3p12.3 population region (DGV_Gold_Standard_June_2021_gssvL82397)",3:75422907-75644624,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/06/2021
+R,"3p12.3 population region (DGV_Gold_Standard_June_2021_gssvL82434)",3:75567345-75581692,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/06/2021
+R,"3p12.3 population region (gnomAD-SV_v2.1_DEL_3_33722)",3:75767999-75796000,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/06/2021
+R,"3q11.2 population region (DGV_Gold_Standard_June_2021_gssvL83303)",3:97878295-97923426,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/06/2021
+R,"3q11.2 population region (DGV_Gold_Standard_June_2021_gssvL83307)",3:97887492-97919334,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/06/2021
+R,"3q24 Region (includes ZIC1)",3:136403035-148341113,"3 (Sufficient Evidence)","0 (No Evidence)",,,‐,‐,‐,07/19/2021
+R,"3q25.31 population region (DGV_Gold_Standard_June_2021_gssvL85294)",3:155478166-155498646,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/06/2021
+R,"3q29 population region (DGV_Gold_Standard_June_2021_gssvG26791)",3:195376588-195493533,"0 (No Evidence)","40 (Dosage Sensitivity Unlikely)",,,‐,‐,‐,08/06/2021
+R,"3q29 population region (DGV_Gold_Standard_June_2021_gssvL86947)",3:195380278-195469564,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/06/2021
+R,"3q29 recurrent region (includes DLG1)",3:195756054-197344662,"3 (Sufficient Evidence)","2 (Emerging Evidence)",,,‐,‐,‐,01/21/2016
+R,"4p11 population region (DGV_Gold_Standard_June_2021_gssvG27527)",4:49489242-49524812,"0 (No Evidence)","40 (Dosage Sensitivity Unlikely)",,,‐,‐,‐,08/06/2021
+R,"4p11 population region (DGV_Gold_Standard_June_2021_gssvL90109)",4:49177189-49249875,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/06/2021
+R,"4p16.1 population region (DGV_Gold_Standard_June_2021_gssvG27165)",4:9417997-9457368,"0 (No Evidence)","40 (Dosage Sensitivity Unlikely)",,,‐,‐,‐,08/06/2021
+R,"4p16.1 population region (DGV_Gold_Standard_June_2021_gssvL88361)",4:9486907-9516088,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/06/2021
+R,"4p16.3 terminal (Wolf-Hirschhorn syndrome) region",4:331568-2010962,"3 (Sufficient Evidence)","2 (Emerging Evidence)",,,‐,‐,‐,08/11/2016
+R,"4q13.2 population region (DGV_Gold_Standard_June_2021_gssvL90978)",4:70134832-70270391,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/06/2021
+R,"4q13.2 population region (gnomAD-SV_v2.1_DEL_4_46396)",4:70123650-70232337,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/06/2021
+R,"4q13.2 population region (gnomAD-SV_v2.1_DEL_4_46398)",4:70123999-70171300,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/06/2021
+R,"4q13.2 population region (gnomAD-SV_v2.1_DEL_4_46399)",4:70126481-70235359,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/12/2021
+R,"4q13.2 population region (gnomAD-SV_v2.1_DEL_4_46401)",4:70138063-70247165,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/12/2021
+R,"4q13.2 population region (gnomAD-SV_v2.1_DEL_4_46404)",4:70152039-70261334,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/12/2021
+R,"4q13.3 population region (DGV_Gold_Standard_June_2021_gssvL91223)",4:75282628-75323181,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/06/2021
+R,"4q13.3 population region (gnomAD-SV_v2.1_DEL_4_46744)",4:75315999-75323000,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/12/2021
+R,"4q13.3 population region (gnomAD-SV_v2.1_DEL_4_46753)",4:75483999-75493000,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/12/2021
+R,"5p15 terminal (Cri du chat syndrome) region",5:37693-11347262,"3 (Sufficient Evidence)","2 (Emerging Evidence)",,,‐,‐,‐,06/21/2016
+R,"5p15.33 population region (DGV_Gold_Standard_June_2021_gssvG29169)",5:814446-825367,"0 (No Evidence)","40 (Dosage Sensitivity Unlikely)",,,‐,‐,‐,08/05/2021
+R,"5q13.2 population region (DGV_Gold_Standard_June_2021_gssvG30124)",5:69316084-69343660,"0 (No Evidence)","40 (Dosage Sensitivity Unlikely)",,,‐,‐,‐,08/05/2021
+R,"5q13.2 population region (gnomAD-SV_v2.1_DEL_5_58897)",5:70312999-70365100,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/12/2021
+R,"5q13.2 population region (gnomAD-SV_v2.1_DEL_5_58900)",5:70326999-70335700,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/12/2021
+R,"5q13.2 population region (gnomAD-SV_v2.1_DUP_5_15350)",5:69305399-69369100,"0 (No Evidence)","40 (Dosage Sensitivity Unlikely)",,,‐,‐,‐,08/12/2021
+R,"5q13.2 population region (gnomAD-SV_v2.1_DUP_5_15442)",5:70324499-70404000,"0 (No Evidence)","40 (Dosage Sensitivity Unlikely)",,,‐,‐,‐,08/12/2021
+R,"5q22.1 population region (DGV_Gold_Standard_June_2021_gssvL101506)",5:110905931-110911040,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/05/2021
+R,"5q31.3 population region (DGV_Gold_Standard_June_2021_gssvG31070)",5:140554513-140560187,"0 (No Evidence)","40 (Dosage Sensitivity Unlikely)",,,‐,‐,‐,08/16/2021
+R,"5q31.3 population region (DGV_Gold_Standard_June_2021_gssvL102648)",5:140096767-140104053,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/06/2021
+R,"5q31.3 population region (gnomAD-SV_v2.1_DEL_5_63328)",5:140222136-140238931,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/12/2021
+R,"5q35 recurrent (Sotos syndrome) region (includes NSD1)",5:175728979-177047793,"3 (Sufficient Evidence)","3 (Sufficient Evidence)",,,‐,‐,‐,04/10/2014
+R,"5q35.3 population region (DGV_Gold_Standard_June_2021_gssvL104164)",5:178348352-178353194,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/06/2021
+R,"5q35.3 population region (DGV_Gold_Standard_June_2021_gssvL104429)",5:180591001-180596624,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/05/2021
+R,"5q35.3 population region (gnomAD-SV_v2.1_DEL_5_65831)",5:180375131-180430626,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/12/2021
+R,"5q35.3 population region (gnomAD-SV_v2.1_DEL_5_65880)",5:180787999-180857000,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/12/2021
+R,"6p21.32 population region (DGV_Gold_Standard_June_2021_gssvL106264)",6:32475856-32514239,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/05/2021
+R,"6p21.32 population region (DGV_Gold_Standard_June_2021_gssvL106269)",6:32516836-32541693,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/05/2021
+R,"6p21.32 population region (DGV_Gold_Standard_June_2021_gssvL106271)",6:32627550-32648423,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/05/2021
+R,"6p22.1 population region (DGV_Gold_Standard_June_2021_gssvL105924)",6:29892560-29905834,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/05/2021
+R,"6p22.1 population region (DGV_Gold_Standard_June_2021_gssvL105927)",6:29837200-29849273,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/05/2021
+R,"6p25.3 population region (DGV_Gold_Standard_June_2021_gssvL104460)",6:83824-202184,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/05/2021
+R,"6q13 population region (DGV_Gold_Standard_June_2021_gssvG32688)",6:74707825-74718498,"0 (No Evidence)","40 (Dosage Sensitivity Unlikely)",,,‐,‐,‐,08/05/2021
+R,"6q13 population region (DGV_Gold_Standard_June_2021_gssvG32691)",6:74708884-74717014,"0 (No Evidence)","40 (Dosage Sensitivity Unlikely)",,,‐,‐,‐,08/05/2021
+R,"6q24 region (includes PLAGL1)","6:144243292 -144416561","1 (Little Evidence)","3 (Sufficient Evidence)",,,‐,‐,‐,05/24/2016
+R,"7p11.2 population region (DGV_Gold_Standard_June_2021_gssvL115697)",7:57062764-57088685,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/05/2021
+R,"7p14.1 population region (DGV_Gold_Standard_June_2021_gssvL115094)",7:38386563-38397743,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/05/2021
+R,"7p22.1 population region (DGV_Gold_Standard_June_2021_gssvL113541)",7:6900773-6923243,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/05/2021
+R,"7p22.1 population region (gnomAD-SV_v2.1_DEL_7_77765)",7:5940999-5953000,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/12/2021
+R,"7p22.1 population region (gnomAD-SV_v2.1_DEL_7_77769)",7:5976999-5982000,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/12/2021
+R,"7p22.1 population region (gnomAD-SV_v2.1_DEL_7_77893)",7:6818999-6827200,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/12/2021
+R,"7q11.21 population region (DGV_Gold_Standard_June_2021_gssvL115987)",7:62687315-62723648,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/05/2021
+R,"7q11.21 population region (DGV_Gold_Standard_June_2021_gssvL116036)",7:62963166-62979392,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/05/2021
+R,"7q11.21 population region (gnomAD-SV_v2.1_DEL_7_81890)",7:65110999-65144000,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/12/2021
+R,"7q11.23 population region (DGV_Gold_Standard_June_2021_gssvL116711)",7:74378312-74480711,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/05/2021
+R,"7q11.23 population region (gnomAD-SV_v2.1_DEL_7_82621)",7:74223499-74230000,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/12/2021
+R,"7q11.23 population region (gnomAD-SV_v2.1_DEL_7_82636)",7:74420999-74428000,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/12/2021
+R,"7q11.23 population region (gnomAD-SV_v2.1_DEL_7_82637)",7:74452999-74459200,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/12/2021
+R,"7q11.23 population region (gnomAD-SV_v2.1_DEL_7_82638)",7:74468999-74476300,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/12/2021
+R,"7q11.23 recurrent (Williams-Beuren syndrome) region (includes ELN)",7:72744455-74142510,"3 (Sufficient Evidence)","3 (Sufficient Evidence)",,,‐,‐,‐,08/06/2015
+R,"7q11.23 recurrent distal region (includes HIP1, YWHAG)",7:75158048-76063176,"2 (Emerging Evidence)","1 (Little Evidence)",,,‐,‐,‐,12/31/2018
+R,"7q22.1 population region (DGV_Gold_Standard_June_2021_gssvL117874)",7:101968967-102022209,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/05/2021
+R,"7q22.1 population region (gnomAD-SV_v2.1_DEL_7_84190)",7:99461390-99463562,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/12/2021
+R,"7q22.1 population region (gnomAD-SV_v2.1_DEL_7_84412)",7:102300999-102331000,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/12/2021
+R,"7q34 population region (DGV_Gold_Standard_June_2021_gssvL119360)",7:142133273-142170344,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/05/2021
+R,"7q34 population region (DGV_Gold_Standard_June_2021_gssvL119369)",7:142099063-142108894,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/05/2021
+R,"7q34 population region (DGV_Gold_Standard_June_2021_gssvL119380)",7:142460176-142482236,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/05/2021
+R,"7q34 population region (DGV_Gold_Standard_June_2021_gssvL119381)",7:142461276-142474923,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/05/2021
+R,"7q34 population region (gnomAD-SV_v2.1_DEL_7_87015)",7:141754993-141780979,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/11/2021
+R,"7q34 population region (gnomAD-SV_v2.1_DEL_7_87016)",7:141765424-141794499,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/11/2021
+R,"7q35 population region (DGV_Gold_Standard_June_2021_gssvG35898)",7:143884211-143930465,"0 (No Evidence)","40 (Dosage Sensitivity Unlikely)",,,‐,‐,‐,08/05/2021
+R,"7q35 population region (DGV_Gold_Standard_June_2021_gssvL119429)",7:143880615-144075919,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/05/2021
+R,"7q35 population region (gnomAD-SV_v2.1_DEL_7_87112)",7:143408999-143417500,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/11/2021
+R,"7q36.1 population region (DGV_Gold_Standard_June_2021_gssvL119849)",7:150286146-150307909,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/05/2021
+R,"7q36.3 ZRS (SHH cis-regulatory) duplication region (within LMBR1 intron 5)",7:156583796-156584568,"0 (No Evidence)","3 (Sufficient Evidence)",,,‐,‐,‐,02/15/2018
+R,"8p23.1 population region (DGV_Gold_Standard_June_2021_gssvG36607)",8:7110945-7157807,"0 (No Evidence)","40 (Dosage Sensitivity Unlikely)",,,‐,‐,‐,08/05/2021
+R,"8p23.1 population region (DGV_Gold_Standard_June_2021_gssvG36608)",8:6828736-6878156,"0 (No Evidence)","40 (Dosage Sensitivity Unlikely)",,,‐,‐,‐,08/05/2021
+R,"8p23.1 population region (DGV_Gold_Standard_June_2021_gssvG36644)",8:7212582-7227421,"0 (No Evidence)","40 (Dosage Sensitivity Unlikely)",,,‐,‐,‐,08/05/2021
+R,"8p23.1 population region (gnomAD-SV_v2.1_DEL_8_89353)",8:7736499-7764500,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/11/2021
+R,"8p23.1 population region (gnomAD-SV_v2.1_DEL_8_89355)",8:7744999-7754100,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/11/2021
+R,"8p23.1 population region (gnomAD-SV_v2.1_DEL_8_89356)",8:7798999-7824100,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/11/2021
+R,"8p23.1 population region (gnomAD-SV_v2.1_DEL_8_89357)",8:7806249-7812100,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/11/2021
+R,"8p23.1 population region (gnomAD-SV_v2.1_DEL_8_89703)",8:11903999-11926000,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/11/2021
+R,"8p23.1 population region (gnomAD-SV_v2.1_DEL_8_89706)",8:11961999-11968000,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/11/2021
+R,"8p23.1 population region (gnomAD-SV_v2.1_DEL_8_89725)",8:12291199-12311050,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/11/2021
+R,"8p23.1 population region (gnomAD-SV_v2.1_DUP_8_23708)",8:7736999-7743100,"0 (No Evidence)","40 (Dosage Sensitivity Unlikely)",,,‐,‐,‐,08/17/2021
+R,"8p23.1 population region (gnomAD-SV_v2.1_DUP_8_23819)",8:12251799-12297400,"0 (No Evidence)","40 (Dosage Sensitivity Unlikely)",,,‐,‐,‐,08/11/2021
+R,"8p23.1 region (DEFB gene cluster)",8:7053186-8130689,"40 (Dosage Sensitivity Unlikely)","40 (Dosage Sensitivity Unlikely)",,,‐,‐,‐,03/12/2014
+R,"8p23.3 population region (gnomAD-SV_v2.1_DEL_8_88399)",8:25899-33100,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/11/2021
+R,"8p23.3 population region (gnomAD-SV_v2.1_DEL_8_88408)",8:116099-129200,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/11/2021
+R,"8q24.3 population region (gnomAD-SV_v2.1_DEL_8_98283)",8:145312849-145332400,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/11/2021
+R,"8q24.3 population region (gnomAD-SV_v2.1_DEL_8_98285)",8:145479999-145502750,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/17/2021
+R,"9p11.1 population region (gnomAD-SV_v2.1_DEL_9_102297)",9:47307099-47317679,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/11/2021
+R,"9p11.2 population region (DGV_Gold_Standard_June_2021_gssvG38779)",9:44283472-44840754,"0 (No Evidence)","40 (Dosage Sensitivity Unlikely)",,,‐,‐,‐,08/05/2021
+R,"9p11.2 population region (gnomAD-SV_v2.1_DEL_9_102024)",9:43622999-43708000,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/11/2021
+R,"9p11.2 population region (gnomAD-SV_v2.1_DEL_9_102025)",9:43623999-43631000,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/17/2021
+R,"9p11.2 population region (gnomAD-SV_v2.1_DEL_9_102027)",9:43628499-43647400,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/17/2021
+R,"9p11.2 population region (gnomAD-SV_v2.1_DEL_9_102032)",9:43708999-43728000,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/17/2021
+R,"9p11.2 population region (gnomAD-SV_v2.1_DEL_9_102035)",9:43723999-43739000,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/11/2021
+R,"9p11.2 population region (gnomAD-SV_v2.1_DEL_9_102036)",9:43733799-43739000,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/17/2021
+R,"9p11.2 population region (gnomAD-SV_v2.1_DEL_9_102042)",9:43795899-43804300,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/11/2021
+R,"9p11.2 population region (gnomAD-SV_v2.1_DEL_9_102043)",9:43800749-43849800,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/11/2021
+R,"9p11.2 population region (gnomAD-SV_v2.1_DEL_9_102046)",9:43870599-43876000,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/17/2021
+R,"9p11.2 population region (gnomAD-SV_v2.1_DEL_9_102047)",9:43870599-43899100,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/11/2021
+R,"9p11.2 population region (gnomAD-SV_v2.1_DEL_9_102048)",9:43902774-43914325,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/11/2021
+R,"9p11.2 population region (gnomAD-SV_v2.1_DEL_9_102049)",9:43915599-43920850,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/11/2021
+R,"9p11.2 population region (gnomAD-SV_v2.1_DEL_9_102085)",9:44313499-44331000,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/17/2021
+R,"9p11.2 population region (gnomAD-SV_v2.1_DEL_9_102096)",9:44388999-44470300,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/11/2021
+R,"9p11.2 population region (gnomAD-SV_v2.1_DEL_9_102097)",9:44391999-44411000,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/11/2021
+R,"9p11.2 population region (gnomAD-SV_v2.1_DEL_9_102099)",9:44399899-44405000,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/17/2021
+R,"9p11.2 population region (gnomAD-SV_v2.1_DEL_9_102187)",9:45728849-45746725,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/11/2021
+R,"9p11.2 population region (gnomAD-SV_v2.1_DEL_9_102236)",9:46366999-46389000,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/11/2021
+R,"9p11.2 population region (gnomAD-SV_v2.1_DEL_9_102294)",9:47281174-47300125,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/11/2021
+R,"9p11.2 population region (gnomAD-SV_v2.1_DEL_9_102296)",9:47298999-47304000,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/11/2021
+R,"9p12 population region (DGV_Gold_Standard_June_2021_gssvL130619)",9:43584760-43755000,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/05/2021
+R,"9p12 population region (DGV_Gold_Standard_June_2021_gssvL130637)",9:43589946-43694171,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/05/2021
+R,"9p12 population region (gnomAD-SV_v2.1_DEL_9_101915)",9:41322999-41329000,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/11/2021
+R,"9p12 population region (gnomAD-SV_v2.1_DEL_9_101925)",9:41499999-41507000,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/11/2021
+R,"9p12 population region (gnomAD-SV_v2.1_DEL_9_101967)",9:42363999-42374800,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/11/2021
+R,"9p13.1 population region (gnomAD-SV_v2.1_DEL_9_101840)",9:40024899-40031800,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/11/2021
+R,"9p24.3 population region (gnomAD-SV_v2.1_DUP_9_26178)",9:111999-126000,"0 (No Evidence)","40 (Dosage Sensitivity Unlikely)",,,‐,‐,‐,08/11/2021
+R,"9q12 population region (gnomAD-SV_v2.1_DEL_9_102303)",9:65496999-65509000,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/11/2021
+R,"9q13 population region (gnomAD-SV_v2.1_DEL_9_102391)",9:67954499-67986500,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/10/2021
+R,"9q21.11 population region (gnomAD-SV_v2.1_DEL_9_102459)",9:69375499-69388225,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/10/2021
+R,"9q21.11 population region (gnomAD-SV_v2.1_DEL_9_102460)",9:69398749-69405200,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/10/2021
+R,"9q21.11 population region (gnomAD-SV_v2.1_DEL_9_102461)",9:69418924-69435100,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/10/2021
+R,"9q21.11 population region (gnomAD-SV_v2.1_DUP_9_27460)",9:70557057-70693525,"0 (No Evidence)","40 (Dosage Sensitivity Unlikely)",,,‐,‐,‐,08/10/2021
+R,"9q21.11 population region (gnomAD-SV_v2.1_DUP_9_27462)",9:70631499-70655275,"0 (No Evidence)","40 (Dosage Sensitivity Unlikely)",,,‐,‐,‐,08/17/2021
+R,"9q31.1 population region (DGV_Gold_Standard_June_2021_gssvL132495)",9:107362715-107368622,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/05/2021
+R,"9q31.2 population region (gnomAD-SV_v2.1_DEL_9_104809)",9:110537534-110540595,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/10/2021
+R,"9q32 population region (DGV_Gold_Standard_June_2021_gssvG40321)",9:117078800-117098147,"0 (No Evidence)","40 (Dosage Sensitivity Unlikely)",,,‐,‐,‐,08/05/2021
+R,"9q34.3 population region (gnomAD-SV_v2.1_DEL_9_106704)",9:138936849-138944500,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/10/2021
+R,"DLK1-MEG3 Intergenic DMR",14:101191391-101294616,"1 (Little Evidence)","0 (No Evidence)",,,‐,‐,‐,05/10/2012
+R,"SOX9 upstream enhancer region",17:67892996-69792434,"3 (Sufficient Evidence)","1 (Little Evidence)",,,‐,‐,‐,06/07/2021
+R,"Xp11.22 region (includes HUWE1)",X:53363456-53793054,"0 (No Evidence)","3 (Sufficient Evidence)",,,‐,‐,‐,11/20/2018
+R,"Xp11.22p11.23 recurrent region (includes SHROOM4)",X:48306152-52103258,"0 (No Evidence)","3 (Sufficient Evidence)",,,‐,‐,‐,12/14/2017
+R,"Xp11.23 population region (DGV_Gold_Standard_June_2021_gssvL136075)",X:47880294-47952112,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/03/2021
+R,"Xp11.23 population region (gnomAD-SV_v2.1_DEL_X_186156)",X:49176299-49186050,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/03/2021
+R,"Xp11.23 population region (gnomAD-SV_v2.1_DUP_X_53149)",X:49197299-49208400,"0 (No Evidence)","40 (Dosage Sensitivity Unlikely)",,,‐,‐,‐,08/03/2021
+R,"Xp11.23 population region (gnomAD-SV_v2.1_DUP_X_53151)",X:49292999-49318650,"0 (No Evidence)","40 (Dosage Sensitivity Unlikely)",,,‐,‐,‐,08/03/2021
+R,"Xp11.23 population region (gnomAD-SV_v2.1_DUP_X_53155)",X:49328999-49343400,"0 (No Evidence)","40 (Dosage Sensitivity Unlikely)",,,‐,‐,‐,08/03/2021
+R,"Xp11.23 population region (gnomAD-SV_v2.1_DUP_X_53157)",X:49338999-49356900,"0 (No Evidence)","40 (Dosage Sensitivity Unlikely)",,,‐,‐,‐,08/03/2021
+R,"Xp11.23 region (includes MAOA and MAOB)",X:43514154-43741720,"3 (Sufficient Evidence)","0 (No Evidence)",,,‐,‐,‐,10/11/2017
+R,"Xp21.2 region (includes NR0B1)",X:30195000-30355000,"0 (No Evidence)","3 (Sufficient Evidence)",,,‐,‐,‐,07/22/2020
+R,"Xp22.31 recurrent region (includes STS)",X:6455812-8124954,"3 (Sufficient Evidence)","40 (Dosage Sensitivity Unlikely)",,,‐,‐,‐,07/01/2021
+R,"Xq21.1 population region (DGV_Gold_Standard_June_2021_gssvL136501)",X:76137628-76141022,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/03/2021
+R,"Xq24 population region (DGV_Gold_Standard_June_2021_gssvG41158)",X:120006512-120123897,"0 (No Evidence)","40 (Dosage Sensitivity Unlikely)",,,‐,‐,‐,08/03/2021
+R,"Xq24 population region (gnomAD-SV_v2.1_DEL_X_189262)",X:120063234-120090000,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/03/2021
+R,"Xq24 population region (gnomAD-SV_v2.1_DEL_X_189263)",X:120077116-120120000,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/03/2021
+R,"Xq26.3 population region (gnomAD-SV_v2.1_DEL_X_189886)",X:134872199-134878900,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/03/2021
+R,"Xq26.3 population region (gnomAD-SV_v2.1_DEL_X_189893)",X:134948399-134964600,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/03/2021
+R,"Xq27.3 population region (DGV_Gold_Standard_June_2021_gssvL137799)",X:142601775-142800327,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/03/2021
+R,"Xq28 population region (DGV_Gold_Standard_June_2021_gssvG41365)",X:153409846-153460630,"0 (No Evidence)","40 (Dosage Sensitivity Unlikely)",,,‐,‐,‐,08/03/2021
+R,"Xq28 population region (gnomAD-SV_v2.1_DEL_X_190688)",X:152240999-152251200,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/03/2021
+R,"Xq28 population region (gnomAD-SV_v2.1_DEL_X_190749)",X:153511999-153522000,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/03/2021
+R,"Xq28 population region (gnomAD-SV_v2.1_DEL_X_190964)",X:155238299-155249500,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/03/2021
+R,"Xq28 recurrent region (includes GDI1)",X:153624564-153783898,"0 (No Evidence)","3 (Sufficient Evidence)",,,‐,‐,‐,05/26/2016
+R,"Xq28 recurrent region (int22h1/int22h2-flanked) (includes RAB39B)",X:154118603-154564401,"3 (Sufficient Evidence)","3 (Sufficient Evidence)",,,‐,‐,‐,08/31/2018
+R,"Xq28 region (includes MECP2)",X:153273980-153375749,"0 (No Evidence)","3 (Sufficient Evidence)",,,‐,‐,‐,02/22/2021
+R,"Yq11.223 population region (DGV_Gold_Standard_June_2021_gssvL138419)",Y:24361866-24465171,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/03/2021
+R,"Yq11.223 population region (DGV_Gold_Standard_June_2021_gssvL138428)",Y:25853189-26146959,"40 (Dosage Sensitivity Unlikely)","0 (No Evidence)",,,‐,‐,‐,08/03/2021
+R,"Yq11.223 population region (gnomAD-SV_v2.1_DUP_Y_55049)",Y:23656999-23713300,"0 (No Evidence)","40 (Dosage Sensitivity Unlikely)",,,‐,‐,‐,08/03/2021
+R,"Yq11.223 population region (gnomAD-SV_v2.1_DUP_Y_55057)",Y:24024199-24070000,"0 (No Evidence)","40 (Dosage Sensitivity Unlikely)",,,‐,‐,‐,08/03/2021
+,,,,,,,,,,
