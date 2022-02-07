@@ -10,7 +10,7 @@ To develop a user-friendly web-application for the visualization, genomic explor
 
 #### Methods
 
-Aggregated data of >200,000 population CNVs from the UK Biobank and gnomAD as well as >10,000 patient CNVs from ClinVar. In addition, we identified ten genomic annotations such as gene dosage-sensitivity scores and two bioinformatic tools (ClassifyCNV, enrichr). All data and tools were integrated into a novel R Shiny based interface and were deployed in the Google Cloud platform as web-application.
+We aggregated data of >200,000 population CNVs from the UK Biobank and gnomAD as well as >10,000 patient CNVs from ClinVar. In addition, we identified ten genomic annotations such as gene dosage-sensitivity scores and two bioinformatic tools (ClassifyCNV, enrichr). All data and tools were integrated into a novel R Shiny based interface and were deployed in the Google Cloud platform as web-application.
 
 #### Results
 
