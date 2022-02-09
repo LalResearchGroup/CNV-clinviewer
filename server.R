@@ -721,8 +721,8 @@ server <- function(input, output, session) {
     content = function(file) {
       
       tempReport <-
-        file.path(tempdir(), "CLINCNV_report.Rmd")
-      file.copy("CLINCNV_report.Rmd", tempReport, overwrite = TRUE)
+        file.path(tempdir(), "CNV-clinviewer_report.Rmd")
+      file.copy("CNV-clinviewer_report.Rmd", tempReport, overwrite = TRUE)
       
       # Set up parameters to pass to Rmd document
       params <- list(

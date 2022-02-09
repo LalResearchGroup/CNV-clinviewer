@@ -48,8 +48,8 @@ server.R: Server of Shiny app
 ui.R: User interface of Shiny app
 master_data.RDS: R object with all data.
 CNV-clinviewer_report.Rmd: Markdown file for generation of report in Shiny app
-ClassifyCNV-master: Folder with ClassifyCNV python tool integrated in Shiny app
-Dockerfile: Dockerfile used for deployment in GoogleCloud
+ClassifyCNV-master: Folder with ClassifyCNV tool integrated in Shiny app
+Dockerfile: Dockerfile used for deployment
 ```
 
 ## Run app locally

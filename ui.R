@@ -470,7 +470,7 @@ ui = fluidPage(
                           "To develop a user-friendly web-application for the visualization, genomic exploration and standardized clinical significance interpretation of large copy number variants (CNVs).",
                           "<br>","<br>",
                           "<b>Methods</b>","<br>",
-                          "Aggregated CNV data of >500,000 individuals from the UK Biobank and gnomAD as well as >10,000 patient CNVs from ClinVar.
+                          "We aggregated CNV data of >480,000 individuals from the UK Biobank and gnomAD as well as >10,000 patient CNVs from ClinVar.
                           In addition, we identified and integrated ten genomic annotations such as gene dosage sensitivity scores and two CNV bioinformatic tools (ClassifyCNV, enrichr). 
                           All data and tools were integrated into a novel R Shiny based interface and was deployed in the google cloud as web-application",
                           "<br>","<br>",
