@@ -356,6 +356,13 @@ names(cnvs_clinvar) <- c("chrom", "chromStart", "chromEnd", "Type", "Classificat
 cnvs_clinvar$Type = ifelse(cnvs_clinvar$Type == "copy number gain", "duplication", "deletion")
 cnvs_clinvar$chrom = paste0("chr",cnvs_clinvar$chrom)
 
+#save  data to test upload of many CNVs in tool
+cnvs_10000_example = data.frame("CHR" = cnvs_clinvar$chrom, 
+                                "START" = cnvs_clinvar$chromStart, 
+                                "END"= cnvs_clinvar$chromEnd, 
+                                "TYPE"= ifelse(cnvs_clinvar$Type == "deletion", "DEL", "DUP"))
+write.table(cnvs_10000_example[1:10000,], "cnvs_10000_example.bed", quote = F, sep='\t', row.names = F)
+
 #save data per chromosome
 clinvar_cnv_list = list()
 for(i in unique(cnvs_clinvar$chrom)) {

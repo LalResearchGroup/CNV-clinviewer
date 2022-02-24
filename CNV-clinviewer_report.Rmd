@@ -71,7 +71,7 @@ p {
 ### **Variant Summary**
 
 
-|Variant                 | Type            | Classification according to ACMG^1^       |     |
+|Variant                 | Type            | Classification based on ACMG^1^       |     |
 |:----------------------:|:---------------:|:-----------------------------------------:|:--------:|
 | Chr: `r params$chr`    | `r params$type` | Classification: `r params$Classification` |  |
 | Start: `r params$start`|                 | Total score: `r params$combined_score`^2^    |  |  
@@ -92,7 +92,7 @@ for copy number losses: 1A/B, 2A-H, 3A-C, 4O, and for copy number gains: 1A/B, 2
 
 ---
 
-### **Intersecting dosage-sensitive & disease genes and syndromes**
+### **Intersecting dosage sensitive genes, disease genes and CNV syndromes**
 
 <div style=" text-align:justify;background-color:#fafafa; border-radius: 10px;line-height: 20px;vertical-align: middle; padding:10px; margin:10px;  border: solid; border-color:#f5bd92">
 
@@ -197,10 +197,10 @@ Details about the evidence categories can be found [here](https://www.gimjournal
 
 ### **Methods**
 #### General Aspects
-<p>This automatically generated report provides an overview on the evaluation of a selected CNV in the context of this website. We combine multiple expert-curated resources on genetic and clinical data.</p> 
+<p>This automatically generated report provides an overview on the evaluation of a selected CNV in the context of this website. We combine multiple expert-curated resources of genetic and clinical data.</p> 
 
 #### Limitations 
-<p>The analysis has been performed in a research setting. The contents of this report have been carefully checked and created to the best of our knowledge. But for the information presented here is no claim to completeness, timeliness, quality and accuracy. No responsibility can be accepted for any damage caused by reliance on or use of the contents of this report. We object to any commercial use and disclosure of data.</p>
+<p>The analysis has been performed in a research setting. The contents of this report have been carefully checked and created to the best of our knowledge. But for the information presented here is no claim on completeness, timeliness, quality and accuracy. No responsibility can be accepted for any damage caused by reliance on or use of the contents of this report. We object to any commercial use and disclosure of data.</p>
 
 <p>In case there are any further questions, please do not hesitate to contact us: lald@ccf.org.</p>
 

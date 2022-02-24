@@ -71,12 +71,16 @@ server <- function(input, output, session) {
     updateTabsetPanel(session, "inTabset", selected = "panel4")
   })
   
+  observeEvent(input$title, {
+    updateTabsetPanel(session, "inTabset", selected = "panel1")
+  })
+  
   observeEvent(input$go_to_contact, {
     showModal(modalDialog(
-      title= span( icon("comment-lines"),"Contact the CNV-clinviewer team"),
+      title= span( icon("comment-lines"),"Contact the CNV-ClinViewer team"),
       
       HTML(paste(
-        "<b>The CNV-clinviewer relies on your feedback. Please send an Email if you wish to make a request, a comment, or report a bug.</b>",
+        "<b>The CNV-ClinViewer relies on your feedback. Please send an Email if you wish to make a request, a comment, or report a bug.</b>",
         "<br>",
         "<b>Dennis Lal</b>",
         "Genomic Medicine Institute, Lerner Research Institute, Cleveland Clinic, Cleveland, OH, USA",
@@ -99,13 +103,13 @@ server <- function(input, output, session) {
     showModal(modalDialog(
       HTML(paste(
         "<b>Terms of Use By clicking “Accept”, You agree to the following:</b>",
-        "(1) The CNV-clinviewer is developed for Research Use Only (RUO), and it does not provide any medical or healthcare services or advices whatsoever.",
-        "(2) The CNV-clinviewer is freely available for academic and non-profit purposes only.",
-        "(3) When using results obtained from the CNV-clinviewer, you agree to cite the CNV-clinviewer.",
+        "(1) The CNV-ClinViewer is developed for Research Use Only (RUO), and it does not provide any medical or healthcare services or advices whatsoever.",
+        "(2) The CNV-ClinViewer is freely available for academic and non-profit purposes only.",
+        "(3) When using results obtained from the CNV-ClinViewer, you agree to cite the CNV-ClinViewer.",
         "(4) Your IP address will be recorded by Google Analytics or other means for tracking purposes.",
-        "(5) You confirm and warrant that you have the full right and authority to provide genome data to the CNV-clinviewer, to analyze such data, and to obtain results on such data. 
+        "(5) You confirm and warrant that you have the full right and authority to provide genome data to the CNV-ClinViewer, to analyze such data, and to obtain results on such data. 
         You further confirm and warrant that the data does not contain any identifiable information, and that we may create derivative work for research and educational purposes. 
-        You also understand that the CNV-clinviewer web server does not require user registration, so that your data is potentially accessible by third parties by decrypting URLs.",
+        You also understand that the CNV-ClinViewer web server does not require user registration, so that your data is potentially accessible by third parties by decrypting URLs.",
         "(6) THE SOFTWARE IS PROVIDED 'AS IS', WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, F
         ITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, 
         WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.",
@@ -120,13 +124,13 @@ server <- function(input, output, session) {
     showModal(modalDialog(
       HTML(paste(
         "<b>Terms of Use By clicking “Accept”, You agree to the following:</b>",
-        "(1) The CNV-clinviewer is developed for Research Use Only (RUO), and it does not provide any medical or healthcare services or advices whatsoever.",
-        "(2) The CNV-clinviewer is freely available for academic and non-profit purposes only.",
-        "(3) When using results obtained from the CNV-clinviewer, you agree to cite the CNV-clinviewer.",
+        "(1) The CNV-ClinViewer is developed for Research Use Only (RUO), and it does not provide any medical or healthcare services or advices whatsoever.",
+        "(2) The CNV-ClinViewer is freely available for academic and non-profit purposes only.",
+        "(3) When using results obtained from the CNV-ClinViewer, you agree to cite the CNV-ClinViewer.",
         "(4) Your IP address will be recorded by Google Analytics or other means for tracking purposes.",
         "(5) You confirm and warrant that you have the full right and authority to provide genome data to the CNV-clinviewer, to analyze such data, and to obtain results on such data. 
         You further confirm and warrant that the data does not contain any identifiable information, and that we may create derivative work for research and educational purposes. 
-        You also understand that the CNV-clinviewer web server does not require user registration, so that your data is potentially accessible by third parties by decrypting URLs.",
+        You also understand that the CNV-ClinViewer web server does not require user registration, so that your data is potentially accessible by third parties by decrypting URLs.",
         "(6) THE SOFTWARE IS PROVIDED 'AS IS', WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, F
         ITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, 
         WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.",
@@ -157,6 +161,7 @@ server <- function(input, output, session) {
         "7. <b>FILTER_'name'</b> : additional binary variables (with values 1 (='yes') and 0 (='no')) for filtering. The name of the variable should be provided after 'FILTER_'.", "<br>","<br>"
       )),
       hr(),
+      p("Example data table:"),
       div(tableOutput("example_cnvs"), style = "font-size:70%", align= "center"),
       hr(),
       downloadLink('download_example', 'Download example (.bed)', style = 'font-size:14px'),
@@ -177,7 +182,7 @@ server <- function(input, output, session) {
         "(2) The CNV-clinviewer is freely available for academic and non-profit purposes only.",
         "(3) When using results obtained from the CNV-clinviewer, you agree to cite the CNV-clinviewer.",
         "(4) Your IP address will be recorded by Google Analytics or other means for tracking purposes.",
-        "(5) You confirm and warrant that you have the full right and authority to provide genome data to the CNV-clinviewer, to analyze such data, and to obtain results on such data. 
+        "(5) You confirm and warrant that you have the full right and authority to provide genome data to the CNV-ClinViewer, to analyze such data, and to obtain results on such data. 
         You further confirm and warrant that the data does not contain any identifiable information, and that we may create derivative work for research and educational purposes. 
         You also understand that the CNV-clinviewer web server does not require user registration, so that your data is potentially accessible by third parties by decrypting URLs.",
         "(6) THE SOFTWARE IS PROVIDED 'AS IS', WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, F
@@ -219,12 +224,17 @@ server <- function(input, output, session) {
   
   ##### DATA UPLOAD AND NAVIGATION TO ANALYSIS PAGE #####
   uploaded_cnvs = reactiveValues(table = NULL)
+  upload_error =  reactiveValues(text = NULL)
   
-  observeEvent(input$submit_data_upload, {
+  output$upload_error_text = renderText({
+    upload_error$text
+  })
+  
+  
+  observeEvent(input$file_upload, {
     
     req(input$agree_terms2)
-    
-    inFile <- input$file1
+    req(input$file_upload$datapath)
     
     if (stringr::str_ends(input$file_upload$datapath, "(xlsx|xls)")) {
       df <-  readxl::read_excel(input$file_upload$datapath) 
@@ -237,34 +247,47 @@ server <- function(input, output, session) {
       })
     }
 
-    validate(
-      need(ncol(df) > 4, "Please check the format of your file.")
-    )
-    
+    if (nrow(df) > 10000){
+      upload_error$text = "Please do not submit the data and upload only up to 10,000 CNVs."
+    } else if (ncol(df) < 4| sum(grepl("CHR|START|END|TYPE", names(df))) != 4){
+      upload_error$text = "Please do not submit the data and check the format and column headers."
+    } else if (!any(grepl("DEL|DUP",unique(df$TYPE)))) {
+      upload_error$text = "Please do not submit the data and use 'DEL' and 'DUP' for deletions and duplications in the CNV type column."
+    } else if (!all(grepl("chr",unique(df$CHR)))) {
+      upload_error$text = "Please do not submit the data and format the chromosome values 'chr1', 'chr2' etc."
+    } else {
+
+      upload_error$text = NULL
+        
     if(!"ID" %in% names(df)){
       df$ID = seq(1, nrow(df))
     }
-    
+
     if(!"POINTS" %in% names(df)){
       df$POINTS = NA
     }
-    
-    df = data.frame("CHR" = df$CHR, 
-                    "START"= as.integer(df$START), 
-                    "END"= as.integer(df$END), 
-                    "TYPE"= df$TYPE, 
-                    "ID"= as.character(df$ID), 
-                    "POINTS"= df$POINTS, 
-                    df[,grep("FILTER_", names(df))])
-    
+
+    df = data.frame("CHR" = df$CHR,
+                    "START"= as.integer(df$START),
+                    "END"= as.integer(df$END),
+                    "TYPE"= df$TYPE,
+                    "ID"= as.character(df$ID),
+                    "POINTS"= as.numeric(df$POINTS),
+                    df[,grep("FILTER_", names(df))]
+                    )
+
     uploaded_cnvs$table <- df
-  })
+    
+    }
+  
+    })
+  
   
   observeEvent(input$submit_data_paste, { 
     req(input$agree_terms)
     
     df = data.frame(do.call("rbind", strsplit(unlist(strsplit(input$file_paste, "\n")[1]), " ", fixed = TRUE)))
-    names(df)[1:min(5,ncol(df))] = c("CHR", "START", "END", "TYPE", "ID")[1:min(5,ncol(df))]
+    names(df)[1:min(6,ncol(df))] = c("CHR", "START", "END", "TYPE", "ID", "POINTS")[1:min(6,ncol(df))]
     df$START = as.integer(df$START)
     df$END = as.integer(df$END)
     
@@ -281,7 +304,7 @@ server <- function(input, output, session) {
                     "END"= as.integer(df$END), 
                     "TYPE"= df$TYPE, 
                     "ID"= as.character(df$ID), 
-                    "POINTS"= df$POINTS, 
+                    "POINTS"= as.numeric(df$POINTS), 
                     df[,grep("FILTER_", names(df))])
     
     uploaded_cnvs$table <- df
@@ -358,6 +381,8 @@ server <- function(input, output, session) {
       
       div(tableOutput("evidence_categories_table_gain"), style = "font-size:90%", align= "center"),
 
+      p("Legend: TS = triplosensitive, HI = haploinsufficient"),
+      
       footer = tagList(
         modalButton("OK"),
       ),
@@ -390,7 +415,8 @@ server <- function(input, output, session) {
     uploaded_cnvs$table <- merge(uploaded_cnvs$table, scoresheet$table, by= "VariantID", all.x=T)
     #remove variantID as first column
     uploaded_cnvs$table$Variant_ID = uploaded_cnvs$table$VariantID
-    uploaded_cnvs$table$Size = paste0(round((as.numeric(uploaded_cnvs$table$END) - (as.numeric(uploaded_cnvs$table$START)-1))/1000000,2), " Mb")
+    #uploaded_cnvs$table$Size = paste0(round((as.numeric(uploaded_cnvs$table$END) - (as.numeric(uploaded_cnvs$table$START)-1))/1000000,4), " Mb")
+    uploaded_cnvs$table$Size = round((as.numeric(uploaded_cnvs$table$END) - (as.numeric(uploaded_cnvs$table$START)-1))/1000000,4)
     uploaded_cnvs$table = uploaded_cnvs$table[,-1]
     uploaded_cnvs$table$Score_details <- "0 points in all categories"
     tmp= uploaded_cnvs$table[ ,c(which(names(uploaded_cnvs$table) == "1A-B"):which(names(uploaded_cnvs$table) == "5H"))]
@@ -425,7 +451,8 @@ server <- function(input, output, session) {
    uploaded_cnvs$table <- merge(uploaded_cnvs$table, scoresheet$table, by= "VariantID", all.x=T)
    #remove variantID as first column, add as VariantID
    uploaded_cnvs$table$Variant_ID = uploaded_cnvs$table$VariantID
-   uploaded_cnvs$table$Size = paste0(round((as.numeric(uploaded_cnvs$table$END) - (as.numeric(uploaded_cnvs$table$START)-1))/1000000,2), " Mb")
+   #uploaded_cnvs$table$Size = paste0(round((as.numeric(uploaded_cnvs$table$END) - (as.numeric(uploaded_cnvs$table$START)-1))/1000000,4), " Mb")
+   uploaded_cnvs$table$Size = round((as.numeric(uploaded_cnvs$table$END) - (as.numeric(uploaded_cnvs$table$START)-1))/1000000,4)
    uploaded_cnvs$table = uploaded_cnvs$table[,-1]
    uploaded_cnvs$table$Score_details <- "0 points in all categories"
    tmp= uploaded_cnvs$table[ ,c(which(names(uploaded_cnvs$table) == "1A-B"):which(names(uploaded_cnvs$table) == "5H"))]
@@ -457,7 +484,7 @@ server <- function(input, output, session) {
                                         "End" = uploaded_cnvs$table$END, 
                                         "Type" = uploaded_cnvs$table$TYPE, 
                                         "ID" = uploaded_cnvs$table$ID, 
-                                        "Size" = uploaded_cnvs$table$Size, 
+                                        "Size (Mb)" = uploaded_cnvs$table$Size, 
                                         "Classification" = uploaded_cnvs$table$Classification, 
                                         "Total score" = uploaded_cnvs$table$combined_score, 
                                         "Score (ClassifyCNV)" = uploaded_cnvs$table$'Total score',
@@ -470,7 +497,7 @@ server <- function(input, output, session) {
     }, escape = FALSE, 
     filter = 'top',
     rownames = FALSE,
-    colnames= c("Chromosome","Start","End","Type","ID","Size",
+    colnames= c("Chromosome","Start","End","Type","ID","Size (Mb)",
                 paste0("ACMG classification",tags$sup("1")),
                 paste0("Total score",tags$sup("1")), 
                 paste0("Score (ClassifyCNV)",tags$sup("1")), 
@@ -497,14 +524,11 @@ server <- function(input, output, session) {
 
   output$download_classification <- downloadHandler(
     filename = function() {
-      #paste('data-', Sys.Date(), '.bed', sep='')
       paste0('cnv_classification_details', '.tsv')
     },
     content = function(con) {
-      
       #remove columns of non-evaluated columns
       uploaded_cnvs$table[, -c( "2I", "4A","4B", "4C","4D","4E" ,"4F-H","4I","4J","4K", "4L","4M","4N","5A","5B", "5C","5D","5E" ,"5F","5G","5H")] 
-      
       write.table(uploaded_cnvs$table, con, quote = FALSE, sep = "\t", row.names = FALSE)
     }
   )
@@ -547,7 +571,7 @@ server <- function(input, output, session) {
     ranges$chr = as.character(uploaded_cnvs$table[input$classify_table_rows_selected, "CHR"])
 
     markdown$length= (as.numeric(uploaded_cnvs$table[input$classify_table_rows_selected, "END"]) - (as.numeric(uploaded_cnvs$table[input$classify_table_rows_selected, "START"])-1))/1000000
-    markdown$size =  paste0(round(markdown$length,2), "Mb")
+    markdown$size =  paste0(round(markdown$length,4), "Mb")
     markdown$chr = uploaded_cnvs$table[input$classify_table_rows_selected, "CHR"]
     markdown$start = format(uploaded_cnvs$table[input$classify_table_rows_selected, "START"], scientific=F)
     markdown$end = format(uploaded_cnvs$table[input$classify_table_rows_selected, "END"], scientific=F)
@@ -559,8 +583,8 @@ server <- function(input, output, session) {
     if(uploaded_cnvs$table[input$classify_table_rows_selected, "TYPE"] == "DEL"){
       markdown$section2_text = "Overlap with Established/Predicted HI or Established Benign Genes/Genomic Regions"
       markdown$type = "Copy number loss"
-      markdown$ISCN_id = paste0("[GRCh37/hg19] ", chr_location()$`Chromosome location`[1], chr_location()$`Chromosome location`[nrow(chr_location())],
-                         gsub("chr", "", markdown$chr),  "(", floor(ranges$x[1]), "_", ceiling(ranges$x[2]), ")x1")
+      markdown$ISCN_id = paste0("[GRCh37/hg19] ", gsub("chr", "", markdown$chr), chr_location()$`Chromosome location`[1], chr_location()$`Chromosome location`[nrow(chr_location())],
+                           "(", floor(ranges$x[1]), "_", ceiling(ranges$x[2]), ")x1")
     } else if(uploaded_cnvs$table[input$classify_table_rows_selected, "TYPE"] == "DUP"){
       markdown$section2_text = "Overlap with Established Triplosensitive (TS), Haploinsufficient (HI), or Benign Genes or Genomic Regions"
       markdown$type = "Copy number gain"
@@ -699,7 +723,7 @@ server <- function(input, output, session) {
           paste0("Start: ","<b>",markdown$start, "</b>"), "<br>",
           paste0("End: ","<b>",markdown$end, "</b>"), "<br>",
           paste0("Type: ","<b>",markdown$type, "</b>"), "<br>",
-          paste0("Size: ", "<b>", round(markdown$length,2), "Mb</b>"),
+          paste0("Size: ", "<b>", round(markdown$length,4), "Mb</b>"),
           "<br>")}
   )
   
@@ -1590,7 +1614,9 @@ server <- function(input, output, session) {
      }
 
      clinvar_data$color <- ifelse(clinvar_data$Type == "deletion", 'rgb(205, 12, 24)', 'rgb(22, 96, 167)')
-     clinvar_data$Size <- paste0(round((clinvar_data$end - (clinvar_data$start -1))/1000000,2), " Mb")
+     #clinvar_data$Size <- paste0(round((clinvar_data$end - (clinvar_data$start -1))/1000000,4), " Mb")
+     clinvar_data$Size <- round((clinvar_data$end - (clinvar_data$start -1))/1000000,4)
+     
      clinvar_data <- clinvar_data[order(clinvar_data$Type, -clinvar_data$PLOT_START),]
 
      clinvar_data_list$clinvar_data <- clinvar_data
@@ -1622,7 +1648,7 @@ server <- function(input, output, session) {
                                   text = paste("Type: ", clinvar_data1$Type[i], "<br>",
                                                "Chromosome: ", clinvar_data1$chrom[i], "<br>",
                                                "Position: ", clinvar_data1$start[i], "-", clinvar_data1$end[i], "<br>",
-                                               "Size: ", clinvar_data1$Size[i], "<br>",
+                                               "Size (Mb): ", clinvar_data1$Size[i], "<br>",
                                                "% in region:", round(clinvar_data1$percentage_inregion[i],2), "<br>",
                                                "Classification:", clinvar_data1$Classification[i],"<br>",
                                                "Phenotype:", clinvar_data1$Phenotype[i])
@@ -1672,7 +1698,7 @@ server <- function(input, output, session) {
                                text = paste("Type: ", clinvar_data2$Type[i], "<br>",
                                             "Chromosome: ", clinvar_data2$chrom[i], "<br>",
                                             "Position: ", clinvar_data2$start[i], "-", clinvar_data2$end[i], "<br>",
-                                            "Size: ", clinvar_data2$Size[i], "<br>",
+                                            "Size (Mb): ", clinvar_data2$Size[i], "<br>",
                                             "% in region:", round(clinvar_data2$percentage_inregion[i],2), "<br>",
                                             "Classification:", clinvar_data2$Classification[i],"<br>",
                                             "Phenotype:", clinvar_data2$Phenotype[i])
@@ -1722,7 +1748,7 @@ server <- function(input, output, session) {
                                text = paste("Type: ", clinvar_data3$Type[i], "<br>",
                                             "Chromosome: ", clinvar_data3$chrom[i], "<br>",
                                             "Position: ", clinvar_data3$start[i], "-", clinvar_data3$end[i], "<br>",
-                                            "Size:", clinvar_data3$Size[i],
+                                            "Size (Mb):", clinvar_data3$Size[i],"<br>",
                                             "% in region:", round(clinvar_data3$percentage_inregion[i],2), "<br>",
                                             "Classification:", clinvar_data3$Classification[i],"<br>",
                                             "Phenotype:", clinvar_data3$Phenotype[i])
@@ -1750,35 +1776,61 @@ server <- function(input, output, session) {
      }
    )
    
-   output$clinvar_table = renderDataTable(
-         
+   
+   clinvar_tabledata = reactive({
      if(!is.null(clinvar_data_list$clinvar_data)){
-          
+       
        clinvar_data <-  clinvar_data_list$clinvar_data
        clinvar_data <- clinvar_data[order(clinvar_data$percentage_inregion, decreasing = T),]
-       #clinvar_data$Length = clinvar_data$end - (clinvar_data$start -1)
-       #clinvar_data$Size <- paste0(round(clinvar_data$Length/1000000,2), " Mb")
        clinvar_data$OtherIDs <- gsub(",",", ",clinvar_data$OtherIDs)
-    
        
-       clinvar_data %>%
+       
+       clinvar_data = clinvar_data %>%
          dplyr::select(chrom, start, end, Size, percentage_inregion, Type, Classification, Origin, Phenotype,  VariationID, OtherIDs) %>%
          mutate(percentage_inregion = round(percentage_inregion ,2)) %>%
          dplyr::rename(Chromosome = chrom) %>%
          dplyr::rename(Start = start) %>%
          dplyr::rename(End = end) %>%
+         dplyr::rename(`Size (Mb)` = Size) %>%
          dplyr::rename(`% in region` = percentage_inregion) %>%
+         mutate(VariationID_link = paste0("https://www.ncbi.nlm.nih.gov/clinvar/variation/",VariationID)) %>%
          mutate(VariationID = paste0("<a href='", "https://www.ncbi.nlm.nih.gov/clinvar/variation/",VariationID, "/","' target='_blank'>",VariationID,"</a>"))
+
+     }
+     clinvar_data
+     
+   })
+   
+   output$clinvar_table = renderDataTable({
          
+     req(!is.null(clinvar_tabledata()))
+          
+     clinvar_tabledata <- clinvar_tabledata() %>%
+       dplyr::select(Chromosome, Start, End, `Size (Mb)`, `% in region`, Type, Classification, Origin, Phenotype,  VariationID, OtherIDs) 
+         
+     clinvar_tabledata
 
          }, escape = FALSE, 
          filter = 'top',
          rownames = FALSE,
          options = list(paging = FALSE, scrollY= "250px", scrollCollapse = TRUE, dom = 't',
-                        columnDefs = list(list(className = 'dt-center', targets = "_all"))
-                        )
+                        columnDefs = list(list(className = 'dt-center', targets = "_all")))
    )
   
+   
+   output$download_clinvar <- downloadHandler(
+     
+     req(!is.null(clinvar_tabledata())),
+
+     filename = function() {
+       paste0('clinvar_cnvs_',ranges$chr,"_",ranges$x[1],"-",ranges$x[2],'.tsv')
+     },
+     content = function(con) {
+       write.table(clinvar_tabledata()[,-which(names(clinvar_tabledata()) == "VariationID")], con, quote = FALSE, sep = "\t", row.names = FALSE)
+     }
+   )
+   
+   
    
    output$clinvar_cnv_number <- renderText({
      paste0("<b>ClinVar CNVs (n= ",nrow(clinvar_data_list$clinvar_data),")</b>")
@@ -2009,6 +2061,10 @@ server <- function(input, output, session) {
                                                      $("td:eq(9)", nRow).css("background-color", "aliceblue");
                                                      if (parseFloat(aData[10]) < 10)
                                                      $("td:eq(10)", nRow).css("background-color", "aliceblue");
+                                                     if (aData[11] == "3 (Sufficient Evidence)")
+                                                     $("td:eq(11)", nRow).css("background-color", "aliceblue");
+                                                     if (aData[12] == "3 (Sufficient Evidence)")
+                                                     $("td:eq(12)", nRow).css("background-color", "aliceblue");
                                                                                }')
    ),
    caption = paste0("All genes (n=", nrow(filtered_genes),") in selected region")))
@@ -2041,9 +2097,9 @@ server <- function(input, output, session) {
    observeEvent(input$gene_disease_table_help, {
      showModal(modalDialog(
        HTML(paste("The ClinGen Gene Curation working group has developed a framework to standardize the approach to determine the clinical validity for a gene-disease pair.",
-                  "The ClinGen Gene-Disease Clinical Validity curation process involves evaluating the strength of evidence supporting or refuting a claim that variation in a particular gene causes a particular disease.",
+                  "The ClinGen Gene-Disease Clinical Validity curation process involves evaluating the strength of evidence supporting or refuting a claim that variation in a particular gene causes a particular disease.","<br>",
                   "Classifications derived with this framework are reviewed and confirmed or adjusted based on clinical expertise of appropriate disease experts.",
-                  "Possible classifications are: Definitive > Strong > Moderate > Limited > No known Disease Relationship > Disputed Evidence > Refuted Evidence.",
+                  "Possible classifications are: Definitive > Strong > Moderate > Limited > No known Disease Relationship > Disputed Evidence > Refuted Evidence.","<br>",
                   paste("More information can be found", tags$a(href="https://clinicalgenome.org/curation-activities/gene-disease-validity/", "here", target="_blank"), "or",
                         tags$a(href="https://pubmed.ncbi.nlm.nih.gov/28552198/", "here.", target="_blank")),
                   sep = "<br>")),
@@ -2086,9 +2142,9 @@ server <- function(input, output, session) {
    observeEvent(input$clingen_region_table_help, {
      showModal(modalDialog(
        HTML(paste("The ClinGen Dosage Sensitivity curation process collects evidence supporting/refuting the haploinsufficiency and triplosensitivity of genomic regions.",
-                  "Classifications derived with this framework are reviewed and confirmed or adjusted based on clinical expertise of appropriate disease experts.",
+                  "Classifications derived with this framework are reviewed and confirmed or adjusted based on clinical expertise of appropriate disease experts.","<br>",
                   "Possible scores for the Haploinsuficiency score (HI Score) and Triplosensitivity score (TS Score) are: 
-                   0 (No Evidence), 1 (Little Evidence), 2 (Emerging Evidence), 3 (Sufficient Evidence), 40 (Dosage Sensitivity Unlikely)",
+                   0 (No Evidence), 1 (Little Evidence), 2 (Emerging Evidence), 3 (Sufficient Evidence), 40 (Dosage Sensitivity Unlikely)","<br>",
                   paste("More information can be found", tags$a(href="https://www.clinicalgenome.org/curation-activities/dosage-sensitivity/", "here.", target="_blank")),
                   sep = "<br>")),
        footer = tagList(
@@ -2203,7 +2259,7 @@ server <- function(input, output, session) {
                         showlegend = F
         ) %>%
           layout(title = "",
-                 xaxis = list(title = '-log10(p)'),
+                 xaxis = list(title = '-log10(adjusted p-value)'),
                  yaxis = list(title = "Odds Ratio",
                               range = max(max(enriched1$Odds.Ratio), max(enriched2()$Odds.Ratio))),
                  font = list(family = "Arial"),
@@ -2234,7 +2290,7 @@ server <- function(input, output, session) {
                         showlegend = F
         ) %>%
           layout(title = "",
-                 xaxis = list(title = '-log10(p)'),
+                 xaxis = list(title = '-log10(adjusted p-value)'),
                  yaxis = list(title = "Odds Ratio",
                               range = max(max(enriched2$Odds.Ratio), max(enriched1()$Odds.Ratio))),
                  font = list(family = "Arial"),
@@ -2256,6 +2312,7 @@ server <- function(input, output, session) {
     output$enrichR_table_1 <- DT::renderDataTable(DT::datatable({
       req(!is.null(enriched1()))
         enriched <- enriched1()
+        enriched <- enriched[order(enriched$Adjusted.P.value),]
         enriched$Genes <- gsub(";", ", ", enriched$Genes)
         small_enriched <- cbind(Term = enriched$Term, 
                                 'Overlap of genes' = enriched$Overlap,
@@ -2280,6 +2337,7 @@ server <- function(input, output, session) {
     output$enrichR_table_2 <- DT::renderDataTable(DT::datatable({
       req(!is.null(enriched2()))
         enriched <- enriched2()
+        enriched <- enriched[order(enriched$Adjusted.P.value),]
         enriched$Genes <- gsub(";", ", ", enriched$Genes)
         small_enriched <- cbind(Term = enriched$Term, 
                                 'Overlap of genes' = enriched$Overlap,

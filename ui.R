@@ -66,7 +66,7 @@ ui = fluidPage(
   navbarPage(theme = shinytheme("flatly"), 
                id = "inTabset",
                selected = "panel1",
-               title = p(icon("dna"), "CNV-clinviewer"),
+               title = actionLink("title", p(icon("dna"), "CNV-ClinViewer"), style="color: white;"), 
                header = tagList(useShinydashboard()),
                tags$style(
                  type = 'text/css', 
@@ -79,10 +79,10 @@ ui = fluidPage(
                         fluidRow(style = "background-color:#2C3E50;",
                           column(width = 6, offset = 1,
                                  br(), br(), 
-                                 p("CNV-clinviewer", 
+                                 p("CNV-ClinViewer", 
                                    style='padding:4px; font-size:600%; color:white; font-weight: light'),# font-family:"Lucida" Grande, sans-serif;'),
-                                 p("CNV-clinviewer is a user-friendly web-application for the interactive visualization, 
-                                   genomic exploration and standardized clinical significance interpretation of large copy number variants (CNVs).", 
+                                 p("The CNV-ClinViewer is a user-friendly web-application for the interactive visualization, 
+                                   genomic exploration and standardized clinical significance interpretation of large copy number variants (CNVs)", 
                                    style='font-size:200%; color:white; line-height: 40px; font-family:arial; font-weight: lighter'),
                                  br(), 
                                  div(style="display: inline",
@@ -98,12 +98,12 @@ ui = fluidPage(
                           column(width = 8, offset = 2,
                                  br(),br(),br(),
                                   box(width = 12, solidHeader = TRUE, status = "primary",
-                                     title = p(span(icon("upload"), strong("Upload your CNVs (GRCh37/hg19)")), actionButton("upload_help", "", icon = icon("question"), class = "btn-xs", title = "Help")),
+                                     title = p(span(icon("upload"), strong("Upload your CNVs (GRCh37/hg19)"))),
                                      fluidRow(
                                        column(width = 5,
                                               textAreaInput("file_paste", 
                                                            label=p("Copy paste CNV(s)",style="font-size:120%"),
-                                                           value=paste("chr1 50533376 65883376 DUP Sample1","chr1 155233376 160983376 DEL Sample2", sep="\n"), 
+                                                           value=paste("chr1 53543376 65882276 DUP Sample1","chr1 62883376 65884279 DEL Sample2", sep="\n"), 
                                                            width = "400px",
                                                            height = "90px"),
                                               actionButton("submit_data_paste", icon= icon("paper-plane"), "Submit CNV(s)", class="btn-primary"),
@@ -119,7 +119,8 @@ ui = fluidPage(
                                        column(width = 6,  
                                            fluidRow(
                                              column(width = 8,
-                                                    fileInput("file_upload", p("Upload file (.bed/.xlsx; see help)",style="font-size:120%"), multiple = FALSE)
+                                                    fileInput("file_upload", p("Upload file (.txt/.bed/.xlsx)", actionButton("upload_help", "", icon = icon("question"), class = "btn-xs", title = "Help"), style="font-size:120%"), multiple = FALSE),
+                                                    span(textOutput("upload_error_text"), style='font-weight:bold;color:red')
                                                     )),
                                            fluidRow(
                                              column(width = 6,
@@ -142,7 +143,7 @@ ui = fluidPage(
                         column(width =12,
                                br(),
                                tags$hr(),
-                               fluidRow(p("The content on this website is based on version January 27, 2022", align = "center")))
+                               fluidRow(p("The content on this website is based on version February 24, 2022", align = "center")))
     ), #close tabpanel
     
     ########################### PANEL 2  ########################### 
@@ -243,7 +244,7 @@ ui = fluidPage(
                                         column(width=12,
                                                column(width=2,
                                               selectInput("gene_coloring", 
-                                                          p("Gene coloring:",style = "color:grey", actionLink("viewer_help_color", "", icon = icon("question"), class = "btn-xs", title = "Help", style = "color:grey")),
+                                                          p("Gene coloring",style = "color:grey", actionButton("viewer_help_color", "", icon = icon("question"), class = "btn-xs", title = "Help")),
                                                           c("All scores combined" = "scores_combined",
                                                             "LOEUF" = "loeuf",
                                                             "pLI" = "pLI",
@@ -330,6 +331,7 @@ ui = fluidPage(
                                                              #hr(),
                                                              withSpinner(dataTableOutput("clinvar_table", height= "100%")),
                                                              p("ClinVar version: 16 January 2022"),
+                                                             downloadButton("download_clinvar", label = "Download ClinVar table", class = "btn-s", color="primary")
                                                     ))
                                         )), #close well panel and box
                               #hr(),
@@ -353,7 +355,7 @@ ui = fluidPage(
                                             br(),
                                         withSpinner(plotlyOutput("ukb_plot_summary", height= 250)),
                                         column(width=2, offset=10,  align = "right",plotOutput("cnv_legend4", height = 50)),
-                                        br(),br()
+                                        p("UK Biobank data v2")
                                         )), #close well panel and box
                               #hr(),
                               #strong("CNV allele frequency from 14,891 genomes (gnomAD; filtered for CNVs > 50kb)", style = "font-size: 18px"),
@@ -375,7 +377,7 @@ ui = fluidPage(
                                             br(),
                                         withSpinner(plotlyOutput("gnomad_plot_summary", height= 250)),
                                         column(width=2, offset=10,  align = "right",plotOutput("cnv_legend5", height = 50)),
-                                        br(), br()
+                                        p("GnomAD SV data v2.1")
                                         ))  #close well panel and box
                             ))
                 # )#close box
@@ -388,7 +390,7 @@ ui = fluidPage(
                              tabPanel(p("Gene table",actionButton("gene_table_help", "", icon = icon("question"), class = "btn-xs", title = "Help")),
                                       column(width = 12,
                                              br(),
-                                             DT::dataTableOutput("gene_table"),
+                                             div(DT::dataTableOutput("gene_table"), style = "font-size:90%"),
                                              br(),
                                              downloadButton("download_genetable", label = "Download gene table", class = "btn-s")
                                       )),
@@ -466,26 +468,23 @@ ui = fluidPage(
                  tabPanel("Abstract",
                           br(),
                           HTML(paste0(
-                          "<b>Purpose</b>","<br>",
-                          "To develop a user-friendly web-application for the visualization, genomic exploration and standardized clinical significance interpretation of large copy number variants (CNVs).",
-                          "<br>","<br>",
-                          "<b>Methods</b>","<br>",
-                          "We aggregated CNV data of >480,000 individuals from the UK Biobank and gnomAD as well as >10,000 patient CNVs from ClinVar.
-                          In addition, we identified and integrated ten genomic annotations such as gene dosage sensitivity scores and two CNV bioinformatic tools (ClassifyCNV, enrichr). 
-                          All data and tools were integrated into a novel R Shiny based interface and was deployed in the google cloud as web-application",
-                          "<br>","<br>",
-                          "<b>Results</b>","<br>",
-                          "We present the CNV-clinviewer, an interactive visualization and interpretation tool that enables intuitive real-time exploration of CNV data online. 
-                          After upload of CNV data CNV-clinviewer enables","<br>",
-                          "a) automated and manual CNV classification based on the 2019 ACMG/ClinGen Technical Standards for CNVs, ","<br>",
-                          "b) generation of comprehensive reports including CNV classification details, and overlap with dosage-sensitive and clinically relevant genes and genomic region,","<br>",
-                          "c) visualization and dynamic filtering of uploaded CNVs and their exploration in context to CNVs and known disease from publicly available databases,","<br>",
-                          "d) evaluation of the gene content by various gene dosage sensitivity scores and clinical annotations,","<br>",
-                          "e) gene set enrichment analyses to infer knowledge about genes from a selected genomic region.",
-                          "<br>","<br>",
-                          "<b>Conclusion</b>","<br>",
-                          "We developed the CNV-clinviewer, a web-application that facilitates consistent and transparent evaluation of CNVs. 
-                          The application is a user-friendly and publicly available at www.cnv-clinviewer.broadinstitute.org.",
+                          "Copy number variants (CNVs) and their emerging role in in complex diseases are an active field of research. 
+                          Clinical CNV pathogenicity classification and genotype-phenotype analyses are a challenging and time-consuming task, 
+                          that requires the integration of information from many sources that need to be assessed with expert knowledge. 
+                          Here, we introduce the CNV-ClinViewer, an open-source web-application for the clinical evaluation and intuitive exploration of CNVs in one platform. 
+                          We used the Shiny framework of R studio and combined data of >200,000 CNVs from patients and the general population with publicly available genomic, 
+                          bioinformatic and clinical annotations. We integrated an existing CNV classification tool and provide access to enrichment analyses in >180 gene-set libraries. 
+                          To ensure effectiveness and usability we put great emphasize on an interactive workflow with real-time results, visualizations and a user-friendly interface 
+                          design.", "<br>", "<br>", 
+                          
+                          "After the upload of CNV data the CNV-ClinViewer enables,", "<br>", 
+                          "<b>a)</b> semi-automated CNV clinical significance classification based on the 2019 ACMG/ClinGen Technical Standards for CNVs,","<br>", 
+                          "<b>b)</b> comparative and interactive visual inspection of uploaded CNVs and other pathogenic and general population CNV datasets, ","<br>", 
+                          "<b>c)</b> evaluation and prioritization of the genomic content by various gene dosage sensitivity scores, clinical annotations, and gene set enrichment analyses, and", "<br>", 
+                          "<b>d)</b> generation of comprehensive individual CNV reports including clinical significance classification and observed annotations details.",  "<br>", "<br>", 
+                          
+                          "Overall, we believe this resource will facilitate biomedical CNV interpretation in the clinical diagnostic setting, and in combination with clinical 
+                          judgment will enable clinicians and researchers to formulate novel hypotheses and guide their decision-making process.",
                           sep = "<br>")
                  )),
                  tabPanel("Team",
@@ -516,6 +515,7 @@ ui = fluidPage(
                    "7. FILTER_'name' : additional binary variables (with values 1 (='yes') and 0 (='no')) for filtering. The name of the variable should be provided after 'FILTER_'.", "<br>","<br>"
                  )),
                  hr(),
+                 p("Example data table:"),
                  div(tableOutput("example_cnvs2"), style = "font-size:80%", align= "center"),
                  hr(),
                  downloadLink('download_example2', 'Download example (.bed)'),
@@ -629,16 +629,18 @@ ui = fluidPage(
                                       HTML(paste("<b>Clingen gene disease table</b>",
                                                  "The ClinGen Gene Curation working group has developed a framework to standardize the approach to determine the clinical validity for a gene-disease pair.",
                                                  "The ClinGen Gene-Disease Clinical Validity curation process involves evaluating the strength of evidence supporting or refuting a claim that variation in a particular gene causes a particular disease.",
-                                                 "Classifications derived with this framework are reviewed and confirmed or adjusted based on clinical expertise of appropriate disease experts.",
-                                                 "Possible classifications are: Definitive > Strong > Moderate > Limited > No known Disease Relationship > Disputed Evidence > Refuted Evidence.",
+                                                 "Classifications derived with this framework are reviewed and confirmed or adjusted based on clinical expertise of appropriate disease experts.","<br>",
+                                                 "Possible classifications are:", 
+                                                 "Definitive > Strong > Moderate > Limited > No known Disease Relationship > Disputed Evidence > Refuted Evidence.","<br>",
                                                  paste("More information can be found", tags$a(href="https://clinicalgenome.org/curation-activities/gene-disease-validity/", "here", target="_blank"), "or",
                                                        tags$a(href="https://pubmed.ncbi.nlm.nih.gov/28552198/", "here.", target="_blank")),
                                                  sep = "<br>")),
                                       hr(),
                                       HTML(paste("<b>Clingen regions table</b>",
                                                  "The ClinGen Dosage Sensitivity curation process collects evidence supporting/refuting the haploinsufficiency and triplosensitivity of genomic regions.",
-                                                 "Classifications derived with this framework are reviewed and confirmed or adjusted based on clinical expertise of appropriate disease experts.",
-                                                 "Possible scores for the Haploinsuficiency score (HI Score) and Triplosensitivity score (TS Score) are: 0 (No Evidence), 1 (Little Evidence), 2 (Emerging Evidence), 3 (Sufficient Evidence), 40 (Dosage Sensitivity Unlikely)",
+                                                 "Classifications derived with this framework are reviewed and confirmed or adjusted based on clinical expertise of appropriate disease experts.","<br>",
+                                                 "Possible scores for the Haploinsuficiency score (HI Score) and Triplosensitivity score (TS Score) are:", 
+                                                 "0 (No Evidence), 1 (Little Evidence), 2 (Emerging Evidence), 3 (Sufficient Evidence), 40 (Dosage Sensitivity Unlikely)","<br>",
                                                  paste("More information can be found", tags$a(href="https://www.clinicalgenome.org/curation-activities/dosage-sensitivity/", "here.", target="_blank")),
                                                  sep = "<br>")),
                                       hr(),
@@ -673,15 +675,16 @@ ui = fluidPage(
             column(width=12,
              hr(),
              fluidRow(align = "center",
-             p(HTML("<b>Impressum</b>")),
-              p("We object to any commercial use and disclosure of data. 
-                Copyright and use: The authors grants you the right of use to make a private copy for personal purposes. 
+              #p(HTML("<b>Impressum</b>")),
+              p(HTML("We object to any commercial use and disclosure of data. 
+                <b>Copyright and use</b>: The authors grants you the right of use to make a private copy for personal purposes. 
                 However, you are not entitled to change and/or pass on the materials or publish them yourself. 
-                Upon request, you will receive free information about the personal data stored about you. 
+                No personal or uploaded data are saved. No data will be passed on to third parties without your consent.
+                Upon request, you will receive free information about the personal data stored about you.
                 To do so, please contact the administrator. 
-                No liability: The contents of this web project have been carefully checked and created to the best of our knowledge. 
-                But for the information presented here is no claim to completeness, timeliness, quality and accuracy. 
-                No responsibility can be accepted for any damage caused by reliance on or use of the contents of this website.")
+                <b>No liability</b>: The contents of this webtool have been carefully checked and created to the best of our knowledge. 
+                But for the information presented here is no claim on completeness, timeliness, quality and accuracy. 
+                No responsibility can be accepted for any damage caused by reliance on or use of the contents of this website."))
              ))
             ), #close tabpanel
 
