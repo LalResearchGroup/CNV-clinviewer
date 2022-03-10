@@ -63,6 +63,11 @@ ui = fluidPage(
               }")),
   tags$head(tags$style("#modal1 .modal-dialog {width: 1100px;}")),
   tags$head(tags$style("#modal2 .modal-dialog {width: 800px;}")),
+  tags$head(tags$style(HTML("
+                            .shiny-output-error-validation {
+                            color: black;
+                            }"))
+  ),
   navbarPage(theme = shinytheme("flatly"), 
                id = "inTabset",
                selected = "panel1",
@@ -82,7 +87,7 @@ ui = fluidPage(
                                  p("CNV-ClinViewer", 
                                    style='padding:4px; font-size:600%; color:white; font-weight: light'),# font-family:"Lucida" Grande, sans-serif;'),
                                  p("The CNV-ClinViewer is a user-friendly web-application for the interactive visualization, 
-                                   genomic exploration and standardized clinical significance interpretation of large copy number variants (CNVs)", 
+                                   genomic exploration and standardized clinical significance interpretation of large copy-number variants (CNVs)", 
                                    style='font-size:200%; color:white; line-height: 40px; font-family:arial; font-weight: lighter'),
                                  br(), 
                                  div(style="display: inline",
@@ -143,7 +148,7 @@ ui = fluidPage(
                         column(width =12,
                                br(),
                                tags$hr(),
-                               fluidRow(p("The content on this website is based on version February 24, 2022", align = "center")))
+                               fluidRow(p("The content on this website is based on version March 10, 2022", align = "center")))
     ), #close tabpanel
     
     ########################### PANEL 2  ########################### 
@@ -466,6 +471,7 @@ ui = fluidPage(
                  collapsed = FALSE,
                  tabsetPanel(
                  tabPanel("Abstract",
+                          column(12,
                           br(),
                           HTML(paste0(
                             "Copy-number variants (CNVs) and their emerging role in complex and rare diseases are an active field of research. 
@@ -492,8 +498,9 @@ ui = fluidPage(
                             "The CNV-ClinViewer is an open-source project, and its code will continue to grow and improve through version control in the GitHub repository (https://github.com/LalResearchGroup/CNV-clinviewer).",
                             
                           sep = "<br>")
-                 )),
+                 ))),
                  tabPanel("Team",
+                          column(12,
                           br(),
                           HTML(paste0("Marie Macnee (1), Eduardo Pérez-Palma (2), Tobias Brünger (1), Chiara Klöckner (3), Konrad Platzer (3), 
                           Arthur Stefanski (4-5), Ludovica Montanucci (4), Allan Bayat (6-7), Maximilian Radtke (3), Ryan Collins (8-9), 
@@ -513,25 +520,33 @@ ui = fluidPage(
                               "11 Luxembourg Centre for Systems Biomedicine, University Luxembourg, Esch-sur-Alzette, Luxembourg.","<br>","<br>",
                               
                               
-                              "<b>The CNV-ClinViewer relies on your feedback. Please send an Email if you wish to make a request, a comment, or report a bug.</b>",
+                              "<b>The CNV-ClinViewer relies on your feedback. Please send an E-mail if you wish to make a request, a comment, or report a bug.</b>",
                               "<br>",
-                              "<b>Dennis Lal</b>",
-                              "<i class=\"fa fa-envelope\" role=\"presentation\" aria-label=\"envelope icon\"></i> lald@ccf.org","<br>",
-                              "<b>Marie Macnee</b>",
-                              "<i class=\"fa fa-envelope\" role=\"presentation\" aria-label=\"envelope icon\"></i> mariemacnee1@gmail.com","<br>",
-                              "<b>Eduardo Pérez-Palma</b>",
-                              "<i class=\"fa fa-envelope\" role=\"presentation\" aria-label=\"envelope icon\"></i> eduardoperez@udd.cl"
+                              
+                              # "<b>Dennis Lal</b>",
+                              # "<i class=\"fa fa-envelope\" role=\"presentation\" aria-label=\"envelope icon\"></i> lald@ccf.org","<br>",
+                              # "<b>Marie Macnee</b>",
+                              # "<i class=\"fa fa-envelope\" role=\"presentation\" aria-label=\"envelope icon\"></i> mariemacnee1@gmail.com","<br>",
+                              # "<b>Eduardo Pérez-Palma</b>",
+                              # "<i class=\"fa fa-envelope\" role=\"presentation\" aria-label=\"envelope icon\"></i> eduardoperez@udd.cl"
                             
-                              ,sep = "<br>"))
-                 ))
+                              sep = "<br>")),
+                          div(
+                            a(actionButton(inputId = "email2", label = "Contact", 
+                                           icon = icon("envelope", lib = "font-awesome")),
+                              href="mailto:lald@ccf.org,mariemacnee1@gmail.com,eduardoperez@udd.cl"),
+                            align="center"),
+                          tags$head(tags$style(HTML('#email1{background-color:#EC7C25; font-size:100%}'))),
+                 )))
              ), 
              box(solidHeader = TRUE, status = "navy", width=12,
                  title = span(icon("hand-point-right"), "Step 1: Data upload"),
                  collapsible = TRUE,
                  collapsed = TRUE,
                  br(),
+                 column(12,
                  HTML(paste(
-                   "<b>You can upload CNVs in a bed or tab-delimited text file, or in an excel file with the following columns:</b>", "<br>",
+                   "<b>You can upload CNVs in a modified bed or tab-delimited text file, or in an excel file with the following columns:</b>", "<br>",
                    "<br>",
                    "<b>Required columns:</b>", "<br>",
                    "1. CHR: chromosome, for example 'chr1'", "<br>",
@@ -543,7 +558,7 @@ ui = fluidPage(
                    "5. ID: sample ID/ identifier (CNVs with the same sample ID will be visualized in the same row; if you do not provide sample IDs each CNV will be given a unique ID)", "<br>",
                    "6. POINTS: The CNVs are automatically classified based on the",
                    paste0("<a href='", "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7313390/", "' target='_blank'>", "2019 ACMG/ClinGen Technical Standards for CNVs.","</a>"),
-                   "Evaluated evidence categories for copy number losses are: 1A/B, 2A-H, 3A-C, 4O, and for copy number gains: 1A/B, 2A-H, 2J-L, 3A-C, 4O.
+                   "Evaluated evidence categories for copy-number losses are: 1A/B, 2A-H, 3A-C, 4O, and for copy-number gains: 1A/B, 2A-H, 2J-L, 3A-C, 4O.
                    If you have further information e.g. about the family history or the 'de novo' status you can give the total score of the non-evaluated evidence categories in the 'POINTS' column as numeric values (eg. -1 or 0.9).", "<br>",
                    "7. FILTER_'name' : additional binary variables (with values 1 (='yes') and 0 (='no')) for filtering. The name of the variable should be provided after 'FILTER_'.", "<br>","<br>"
                  )),
@@ -555,11 +570,12 @@ ui = fluidPage(
                  br(),
                  downloadLink('download_example_xlsx2', 'Download example (.xlsx)'),
                  br()
-             ), 
+             )), 
              box(solidHeader = TRUE, status = "navy", width=12,
                  title = span(icon("hand-point-right"), "Step 2: Classification"), 
                  collapsible = TRUE,
                  collapsed = TRUE, 
+                 column(12,
                  br(),
                  HTML(paste0("After submitting your CNVs you will get directed to the Analysis page. On top of the page you will find your CNVs in a table with annotated classification. The uploaded CNVs are classified based on the",
                              paste0("<a href='", "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7313390/", "' target='_blank'>", " 2019 ACMG/ClinGen Technical Standards for CNVs ","</a>"),
@@ -577,26 +593,27 @@ ui = fluidPage(
                              "<br>","<br>",
           
                              "Automatically evaluated evidence categories by ClassifyCNV:", "<br>",
-                             "- for copy number losses: 1A/B, 2A-H, 3A-C, 4O","<br>",
-                             "- for copy number gains: 1A/B, 2A-H, 2J-L, 3A-C, 4O",
+                             "- for copy-number losses: 1A/B, 2A-H, 3A-C, 4O","<br>",
+                             "- for copy-number gains: 1A/B, 2A-H, 2J-L, 3A-C, 4O",
           
                              "<br>","<br>"))
-             ), 
+             )), 
              box(solidHeader = TRUE, status = "navy", width=12,
                  title = span(icon("hand-point-right"), "Step 3: Report of selected CNV of interest"),
                  collapsible = TRUE,
                  collapsed = TRUE,
+                 column(12,
                  br(),
                  p("After selecting a CNV of interest in the table above a report in html format can be downloaded. 
                    The report contains summary information of the region, the classification of the CNV 
                    as well as the specific scores given in the evaluated evidence categories from the 2019 ACMG/ClinGen Technical Standards for CNVs."),
                  br()
-             ), 
+             )), 
              box(solidHeader = TRUE, status = "navy", width=12,
                  title = span(icon("hand-point-right"), "Step 4: Exploration and visualization of uploaded CNVs and genomic region"), 
                  collapsible = TRUE,
                  collapsed = TRUE,
-                 
+                 column(12,
                  tabsetPanel(type = "tabs",
                              tabPanel("Viewer",
                                       br(),
@@ -696,7 +713,7 @@ ui = fluidPage(
                                       br(), br()
                              )
                  )
-             ), 
+             )), 
              box(solidHeader = TRUE, status = "primary", width=12,
                  title = span(icon("database"), "Data"),
                  collapsible = TRUE,

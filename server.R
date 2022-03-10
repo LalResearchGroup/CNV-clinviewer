@@ -80,19 +80,27 @@ server <- function(input, output, session) {
       title= span( icon("comment-lines"),"Contact the CNV-ClinViewer team"),
       
       HTML(paste(
-        "<b>The CNV-ClinViewer relies on your feedback. Please send an Email if you wish to make a request, a comment, or report a bug.</b>",
+        "<b>The CNV-ClinViewer relies on your feedback. Please send an E-mail if you wish to make a request, a comment, or report a bug.</b>",
         "<br>",
-        "<b>Dennis Lal</b>",
-        "Genomic Medicine Institute, Lerner Research Institute, Cleveland Clinic, Cleveland, OH, USA",
-        "<i class=\"fa fa-envelope\" role=\"presentation\" aria-label=\"envelope icon\"></i> lald@ccf.org","<br>",
-        "<b>Marie Macnee</b>",
-        "Cologne Center for Genomics (CCG), Medical Faculty of the University of Cologne, University Hospital of Cologne, Cologne, Germany",
-        "<i class=\"fa fa-envelope\" role=\"presentation\" aria-label=\"envelope icon\"></i> mgramm2@uni-koeln.de","<br>",
-        "<b>Eduardo Pérez-Palma</b>",
-        "Universidad del Desarrollo, Centro de Genética y Genómica, Facultad de Medicina Clínica Alemana, Santiago, Chile",
-        "<i class=\"fa fa-envelope\" role=\"presentation\" aria-label=\"envelope icon\"></i> eduardoperez@udd.cl",
+        # "<b>Dennis Lal</b>",
+        # "Genomic Medicine Institute, Lerner Research Institute, Cleveland Clinic, Cleveland, OH, USA",
+        # "<i class=\"fa fa-envelope\" role=\"presentation\" aria-label=\"envelope icon\"></i> lald@ccf.org","<br>",
+        # "<b>Marie Macnee</b>",
+        # "Cologne Center for Genomics (CCG), Medical Faculty of the University of Cologne, University Hospital of Cologne, Cologne, Germany",
+        # "<i class=\"fa fa-envelope\" role=\"presentation\" aria-label=\"envelope icon\"></i> mariemacnee1@gmail.com","<br>",
+        # "<b>Eduardo Pérez-Palma</b>",
+        # "Universidad del Desarrollo, Centro de Genética y Genómica, Facultad de Medicina Clínica Alemana, Santiago, Chile",
+        # "<i class=\"fa fa-envelope\" role=\"presentation\" aria-label=\"envelope icon\"></i> eduardoperez@udd.cl",
         
         sep="<br>")),
+      
+      div(
+        a(actionButton(inputId = "email1", label = "Contact", 
+                       icon = icon("envelope", lib = "font-awesome")),
+          href="mailto:lald@ccf.org,mariemacnee1@gmail.com,eduardoperez@udd.cl"),
+          align="center"),
+      tags$head(tags$style(HTML('#email1{background-color:#EC7C25; font-size:100%}'))),
+      
       footer = tagList(
         modalButton("OK"),
       )
@@ -102,15 +110,15 @@ server <- function(input, output, session) {
   observeEvent(input$terms_use, {
     showModal(modalDialog(
       HTML(paste(
-        "<b>Terms of Use By clicking “Accept”, You agree to the following:</b>",
+        "<b>Terms of Use </b>",
+        "By clicking “Accept”, You agree to the following:",
         "(1) The CNV-ClinViewer is developed for Research Use Only (RUO), and it does not provide any medical or healthcare services or advices whatsoever.",
         "(2) The CNV-ClinViewer is freely available for academic and non-profit purposes only.",
         "(3) When using results obtained from the CNV-ClinViewer, you agree to cite the CNV-ClinViewer.",
-        "(4) Your IP address will be recorded by Google Analytics or other means for tracking purposes.",
-        "(5) You confirm and warrant that you have the full right and authority to provide genome data to the CNV-ClinViewer, to analyze such data, and to obtain results on such data. 
+        "(4) You confirm and warrant that you have the full right and authority to provide genome data to the CNV-ClinViewer, to analyze such data, and to obtain results on such data. 
         You further confirm and warrant that the data does not contain any identifiable information, and that we may create derivative work for research and educational purposes. 
         You also understand that the CNV-ClinViewer web server does not require user registration, so that your data is potentially accessible by third parties by decrypting URLs.",
-        "(6) THE SOFTWARE IS PROVIDED 'AS IS', WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, F
+        "(5) THE SOFTWARE IS PROVIDED 'AS IS', WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, F
         ITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, 
         WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.",
         sep="<br>")),
@@ -123,15 +131,15 @@ server <- function(input, output, session) {
   observeEvent(input$terms_use2, {
     showModal(modalDialog(
       HTML(paste(
-        "<b>Terms of Use By clicking “Accept”, You agree to the following:</b>",
+        "<b>Terms of Use </b>",
+        "By clicking “Accept”, You agree to the following:",
         "(1) The CNV-ClinViewer is developed for Research Use Only (RUO), and it does not provide any medical or healthcare services or advices whatsoever.",
         "(2) The CNV-ClinViewer is freely available for academic and non-profit purposes only.",
         "(3) When using results obtained from the CNV-ClinViewer, you agree to cite the CNV-ClinViewer.",
-        "(4) Your IP address will be recorded by Google Analytics or other means for tracking purposes.",
-        "(5) You confirm and warrant that you have the full right and authority to provide genome data to the CNV-clinviewer, to analyze such data, and to obtain results on such data. 
+        "(4) You confirm and warrant that you have the full right and authority to provide genome data to the CNV-clinviewer, to analyze such data, and to obtain results on such data. 
         You further confirm and warrant that the data does not contain any identifiable information, and that we may create derivative work for research and educational purposes. 
         You also understand that the CNV-ClinViewer web server does not require user registration, so that your data is potentially accessible by third parties by decrypting URLs.",
-        "(6) THE SOFTWARE IS PROVIDED 'AS IS', WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, F
+        "(5) THE SOFTWARE IS PROVIDED 'AS IS', WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, F
         ITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, 
         WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.",
         sep="<br>")),
@@ -144,7 +152,7 @@ server <- function(input, output, session) {
   observeEvent(input$upload_help, {
     showModal( tags$div(id="modal2", modalDialog(
       HTML(paste(
-        "<b>You can upload CNVs in a bed or tab-delimited text file, or in an excel file with the following columns:</b>", "<br>",
+        "<b>You can upload CNVs in a modified bed or tab-delimited text file, or in an excel file with the following columns:</b>", "<br>",
         "<br>",
         "<b>Required columns:</b>", "<br>",
         "1. <b>CHR</b>: chromosome, for example 'chr1'", "<br>",
@@ -156,7 +164,7 @@ server <- function(input, output, session) {
         "5. <b>ID</b>: sample ID/ identifier (CNVs with the same sample ID will be visualized in the same row; if you do not provide sample IDs each CNV will be given a unique ID)", "<br>",
         "6. <b>POINTS</b>: The CNVs are automatically classified based on the",
         paste0("<a href='", "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7313390/", "' target='_blank'>", "2019 ACMG/ClinGen Technical Standards for CNVs.","</a>"),
-        "Evaluated evidence categories for copy number losses are: 1A/B, 2A-H, 3A-C, 4O, and for copy number gains: 1A/B, 2A-H, 2J-L, 3A-C, 4O.
+        "Evaluated evidence categories for copy-number losses are: 1A/B, 2A-H, 3A-C, 4O, and for copy-number gains: 1A/B, 2A-H, 2J-L, 3A-C, 4O.
                    If you have further information e.g. about the family history or the 'de novo' status you can give the total score of the non-evaluated evidence categories in the 'POINTS' column as numeric values (eg. -1 or 0.9).", "<br>",
         "7. <b>FILTER_'name'</b> : additional binary variables (with values 1 (='yes') and 0 (='no')) for filtering. The name of the variable should be provided after 'FILTER_'.", "<br>","<br>"
       )),
@@ -368,16 +376,16 @@ server <- function(input, output, session) {
         "<br>","<br>",
         
         "Automatically evaluated evidence categories by ClassifyCNV:", "<br>",
-        "- for copy number losses: 1A/B, 2A-H, 3A-C, 4O","<br>",
-        "- for copy number gains: 1A/B, 2A-H, 2J-L, 3A-C, 4O",
+        "- for copy-number losses: 1A/B, 2A-H, 3A-C, 4O","<br>",
+        "- for copy-number gains: 1A/B, 2A-H, 2J-L, 3A-C, 4O",
        
        "<br>","<br>",
-       "<b>Information on evaluated evidence categories for copy number losses:</b>")),
+       "<b>Information on evaluated evidence categories for copy-number losses:</b>")),
       
       div(tableOutput("evidence_categories_table_loss"), style = "font-size:90%", align= "center"),
       
       
-      HTML(paste0("<b>Information on evaluated evidence categories for copy number gains:</b>")),
+      HTML(paste0("<b>Information on evaluated evidence categories for copy-number gains:</b>")),
       
       div(tableOutput("evidence_categories_table_gain"), style = "font-size:90%", align= "center"),
 
@@ -588,8 +596,8 @@ server <- function(input, output, session) {
     } else if(uploaded_cnvs$table[input$classify_table_rows_selected, "TYPE"] == "DUP"){
       markdown$section2_text = "Overlap with Established Triplosensitive (TS), Haploinsufficient (HI), or Benign Genes or Genomic Regions"
       markdown$type = "Copy number gain"
-      markdown$ISCN_id = paste0("[GRCh37/hg19] ", chr_location()$`Chromosome location`[1], chr_location()$`Chromosome location`[nrow(chr_location())],
-                        gsub("chr", "", markdown$chr),  "(", floor(ranges$x[1]), "_", ceiling(ranges$x[2]), ")x3")
+      markdown$ISCN_id = paste0("[GRCh37/hg19] ",gsub("chr", "", markdown$chr), chr_location()$`Chromosome location`[1], chr_location()$`Chromosome location`[nrow(chr_location())],
+                          "(", floor(ranges$x[1]), "_", ceiling(ranges$x[2]), ")x3")
 
     }
 
@@ -614,13 +622,13 @@ server <- function(input, output, session) {
     markdown$"2I" = uploaded_cnvs$table[input$classify_table_rows_selected, "2I"]
     markdown$"2J" = ifelse(markdown$type == "Copy number gain",
                            paste(uploaded_cnvs$table[input$classify_table_rows_selected, "2J"], "points"), 
-                           "Category not existent for copy number losses.")
+                           "Category not existent for copy-number losses.")
     markdown$"2K" = ifelse(markdown$type == "Copy number gain",
                            paste(uploaded_cnvs$table[input$classify_table_rows_selected, "2K"], "points"), 
-                           "Category not existent for copy number losses.")
+                           "Category not existent for copy-number losses.")
     markdown$"2L" = ifelse(markdown$type == "Copy number gain",
                            paste(uploaded_cnvs$table[input$classify_table_rows_selected, "2L"], "points"), 
-                           "Category not existent for copy number losses.")
+                           "Category not existent for copy-number losses.")
 
     #section3
     if(uploaded_cnvs$table[input$classify_table_rows_selected, "3"] == 0){
@@ -716,6 +724,7 @@ server <- function(input, output, session) {
     ##### part2: generate and download report ####
 
   output$selected_cnv = renderText({
+    validate(need(!is.null(ranges$x), message ="Please select a CNV of interest in the table."))
 
     paste("Download report of selected variant:",
           "<hr>",
@@ -1028,15 +1037,20 @@ server <- function(input, output, session) {
     
   
     ## ideogram
-    chr_location = reactive({chr_location = intersect_table(data$cytoBand_hg19, ranges)})
+    chr_location = reactive({
+      chr_location = intersect_table(data$cytoBand_hg19, ranges)
+      })
     
-    output$selected_region_ideogram <- renderText(
+    output$selected_region_ideogram <- renderText({
+      req(!is.null(ranges$x))
+      
       paste0("Selected region: GRCh37/hg19 ",
              chr_location()$`Chromosome location`[1],chr_location()$`Chromosome location`[nrow(chr_location())],
              "(", markdown$chr,":", floor(ranges$x[1]), "-", ceiling(ranges$x[2]),")")
-    )
+    })
     
     output$ideogram <- renderPlot({
+      req(!is.null(ranges$x))
       chr_data = data$cytoBand_hg19[data$cytoBand_hg19$chrom == ranges$chr, ]
       
       p = ggplot(data= chr_data) +
@@ -1133,17 +1147,16 @@ server <- function(input, output, session) {
         })
       
       output$number_genes <- renderText({ 
-          req(!is.null(ranges$x)) 
+          validate(need(!is.null(ranges$x), "Please select a CNV of interest in the table."))
           paste0("Genes in region (n= ",nrow(filtered_genes()),")")
       })
       
       output$gene_plotly = renderPlotly({
         
-        validate(need(!is.null(ranges$x), "Please select CNV of interest in table."))
+        validate(need(!is.null(ranges$x), "Please select a CNV of interest in the table."))
         validate(need(nrow(filtered_genes()) > 0, "No genes are intersecting the selected CNV/ genomic region."))
         
         filtered_genes = filtered_genes()
-        #colnames(filtered_genes) <- make.unique(names(filtered_genes))
     
         #show overlapping genes in different rows
         filtered_genes = filtered_genes %>% arrange(start)
@@ -1286,6 +1299,8 @@ server <- function(input, output, session) {
     
       output$gene_legend = renderPlot({
         
+        req(!is.null(ranges$x))
+        
         legend <- data.frame(x=c(1,20), y=c(1, 1), text=c("Dosage sensitive based on selected gene score   ", "   Not dosage sensitive"))
         p <- ggplot(legend, aes(x=x, y=y, color=text))+
           geom_point(size = 6)+
@@ -1318,6 +1333,8 @@ server <- function(input, output, session) {
         })
       
       output$upload_cnv_filter_ui <- renderUI({
+        req(!is.null(ranges$x)) 
+        
         uploaded_data <- uploaded_cnvs$table
         uploaded_data = intersect_table(uploaded_data, ranges)
         req(nrow(uploaded_data)> 0)
@@ -1493,6 +1510,8 @@ server <- function(input, output, session) {
         })
         
         output$cnv_legend = renderPlot({
+          req(!is.null(ranges$x))
+          
           legend <- data.frame(x=c(1,15), y=c(1, 1), text=c("Deletion", "Duplication"))
           ggplot(legend, aes(x=x, y=y, color=text))+
             geom_point(size = 6)+
@@ -1505,6 +1524,8 @@ server <- function(input, output, session) {
         })
         
         output$cnv_legend2 = renderPlot({
+          req(!is.null(ranges$x))
+          
           legend <- data.frame(x=c(1,15), y=c(1, 1), text=c("Deletion", "Duplication"))
           ggplot(legend, aes(x=x, y=y, color=text))+
             geom_point(size = 6)+
@@ -1517,6 +1538,8 @@ server <- function(input, output, session) {
         })
         
         output$cnv_legend3 = renderPlot({
+          req(!is.null(ranges$x))
+          
           legend <- data.frame(x=c(1,15), y=c(1, 1), text=c("Deletion", "Duplication"))
           ggplot(legend, aes(x=x, y=y, color=text))+
             geom_point(size = 6)+
@@ -1529,6 +1552,8 @@ server <- function(input, output, session) {
         })
         
         output$cnv_legend4 = renderPlot({
+          req(!is.null(ranges$x))
+          
           legend <- data.frame(x=c(1,15), y=c(1, 1), text=c("Deletion", "Duplication"))
           ggplot(legend, aes(x=x, y=y, color=text))+
             geom_point(size = 6)+
@@ -1541,6 +1566,8 @@ server <- function(input, output, session) {
         })
         
         output$cnv_legend5 = renderPlot({
+          req(!is.null(ranges$x))
+          
           legend <- data.frame(x=c(1,15), y=c(1, 1), text=c("Deletion", "Duplication"))
           ggplot(legend, aes(x=x, y=y, color=text))+
             geom_point(size = 6)+
@@ -1833,23 +1860,28 @@ server <- function(input, output, session) {
    
    
    output$clinvar_cnv_number <- renderText({
+     req(!is.null(ranges$x))
      paste0("<b>ClinVar CNVs (n= ",nrow(clinvar_data_list$clinvar_data),")</b>")
    })
    
    output$clinvar_cnv_number_1 <- renderText({
+     req(!is.null(ranges$x))
     paste0("Pathogenic/likely pathogenic CNVs (n= ",nrow(clinvar_data_list$clinvar_data1) ,")")
    })
 
    output$clinvar_cnv_number_2 <- renderText({
+     req(!is.null(ranges$x))
      paste0("CNVs of uncertain significance (n= ",nrow(clinvar_data_list$clinvar_data2) ,")")
    })
 
    output$clinvar_cnv_number_3 <- renderText({
+     req(!is.null(ranges$x))
      paste0("Benign/likely benign CNVs (n= ",nrow(clinvar_data_list$clinvar_data3) ,")")
    })
 
    
    output$clinvar_filter_ui <- renderUI({
+     req(!is.null(ranges$x))
        tagList(
          column(width=2,
                 selectizeInput("clinvarfilter_classification", p("Classification filter:", style = "color:grey"),
@@ -2024,7 +2056,7 @@ server <- function(input, output, session) {
    
    output$gene_table <- DT::renderDataTable(DT::datatable({
      
-     validate(need(!is.null(ranges$x), "Please select CNV of interest in table."))
+     validate(need(!is.null(ranges$x), "Please select a CNV of interest in the table"))
      validate(need(nrow(filtered_genes()) > 0, "No genes are intersecting the selected CNV/ genomic region."))
      
      filtered_genes = filtered_genes()
@@ -2111,7 +2143,7 @@ server <- function(input, output, session) {
    
    output$clingen_table <- DT::renderDataTable(DT::datatable({
      
-     validate(need(!is.null(ranges$x), "Please select CNV of interest in table."))
+     validate(need(!is.null(ranges$x), "Please select a CNV of interest in the table"))
      validate(need(nrow(filtered_clingen_gene_disease()) > 0, "No genes in your selected region are associated to a disease in ClinGen."))
      
      filtered_clingen_gene_disease = filtered_clingen_gene_disease()
@@ -2155,7 +2187,7 @@ server <- function(input, output, session) {
    
    output$clingen_region_table <- DT::renderDataTable(DT::datatable({
      
-     validate(need(!is.null(ranges$x), "Please select CNV of interest in table."))
+     validate(need(!is.null(ranges$x), "Please select a CNV of interest in the table"))
      validate(need(nrow(filtered_clingen_regions())>0, "There are no classified regions by ClinGen that intersect your selected CNV/region."))
      
      filtered_clingen_regions = filtered_clingen_regions()
@@ -2192,7 +2224,7 @@ server <- function(input, output, session) {
    
    output$decipher_syndromes <- DT::renderDataTable(DT::datatable({
      
-     validate(need(!is.null(ranges$x), "Please select CNV of interest in table."))
+     validate(need(!is.null(ranges$x), "Please select a CNV of interest in the table"))
      validate(need(nrow(filtered_decipher_syndromes())>0, "The selected region is not associated with expert-curated microdeletion and microduplication syndromes from DECIPHER."))
      
      filtered_decipher_syndromes = filtered_decipher_syndromes()
@@ -2398,16 +2430,3 @@ server <- function(input, output, session) {
     
     
   } #close server
-
-
-
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
