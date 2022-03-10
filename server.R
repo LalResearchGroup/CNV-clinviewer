@@ -528,8 +528,8 @@ server <- function(input, output, session) {
     },
     content = function(con) {
       #remove columns of non-evaluated columns
-      uploaded_cnvs$table[, -c( "2I", "4A","4B", "4C","4D","4E" ,"4F-H","4I","4J","4K", "4L","4M","4N","5A","5B", "5C","5D","5E" ,"5F","5G","5H")] 
-      write.table(uploaded_cnvs$table, con, quote = FALSE, sep = "\t", row.names = FALSE)
+      uploaded_cnvs = uploaded_cnvs$table[, -which(names(uploaded_cnvs$table) %in% c( "2I", "4A","4B", "4C","4D","4E" ,"4F-H","4I","4J","4K", "4L","4M","4N","5A","5B", "5C","5D","5E" ,"5F","5G","5H"))] 
+      write.table(uploaded_cnvs, con, quote = FALSE, sep = "\t", row.names = FALSE)
     }
   )
   

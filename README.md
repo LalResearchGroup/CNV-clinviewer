@@ -1,36 +1,29 @@
 # CNV-clinviewer
 
-The CNV-clinviewer (www.cnv-clinviewer.broadinstitute.org) is a user-friendly web-application for the interactive visualization, genomic exploration and standardized clinical significance interpretation of large copy number variants (CNVs).
+The CNV-clinviewer (www.cnv-clinviewer.broadinstitute.org) is a user-friendly web-application for the interactive visualization, genomic exploration and standardized clinical significance interpretation of large copy-number variants (CNVs).
+
+Contact: Dennis Lal (lald@ccf.org)
+All code copyright (c) 2022 Dennis Lal and is distributed under terms of the MIT license.
 
 ## Synopsis
 
-#### Purpose
+Copy-number variants (CNVs) and their emerging role in complex and rare diseases are an active field of research. Clinical CNV pathogenicity classification and genotype-phenotype analyses are challenging and time-consuming tasks that require the integration and analysis of information from many sources. Here, we introduce the CNV-ClinViewer, an open-source web-application for the clinical evaluation and visual exploration of CNVs. 
 
-To develop a user-friendly web-application for the visualization, genomic exploration and standardized clinical significance interpretation of large copy number variants (CNVs).
+We combined data of >250,000 CNVs from patients and the general population with publicly available genomic, bioinformatic and clinical annotations, using R studio’s Shiny framework. We integrated an existing CNV classification tool in CNV-ClinViewer and provide access to enrichment analyses in >180 gene-set libraries. To ensure effectiveness and usability without bioinformatical expertise, we put great emphasis on an interactive workflow with real-time results, visualizations and a user-friendly interface design. 
 
-#### Methods
-
-We aggregated data of >200,000 population CNVs from the UK Biobank and gnomAD as well as >10,000 patient CNVs from ClinVar. In addition, we identified ten genomic annotations such as gene dosage-sensitivity scores and two bioinformatic tools (ClassifyCNV, enrichr). All data and tools were integrated into a novel R Shiny based interface and were deployed in the Google Cloud platform as web-application.
-
-#### Results
-
-We present the CNV-clinviewer, an interactive visualization and interpretation tool that enables intuitive real-time exploration of CNV data online. After upload of CNV data CNV-clinviewer enables:
+After uploading CNV data, the CNV-ClinViewer enables:
 ```
-a) semi-automated CNV classification based on the 2019 ACMG/ClinGen Technical Standards for CNVs,
-b) generation of comprehensive reports including CNV classification details, and overlap with 
-   established/predicted haploinsufficient/ triploinsufficient and clinically relevant genes and genomic regions,
-c) visualization and dynamic filtering of uploaded CNVs and identification of overlap in cases and controls, 
-d) evaluation and prioritization of the genomic content by various gene dosage sensitivity scores and clinical annotations, 
-e) gene set enrichment analyses to infer knowledge about genes from a selected genomic region.
+a) semi-automated CNV clinical significance classification based on the 2019 ACMG/ClinGen Technical Standards for CNVs, 
+b) comparative and interactive visual inspection of uploaded CNVs along with other pathogenic and general population CNV datasets, 
+c) evaluation and prioritization of the genomic content by various gene dosage sensitivity scores, clinical annotations, and gene set enrichment analyses, and 
+d) generation of comprehensive individual CNV reports including clinical significance classification and observed annotations details. 
 ```
 
-#### Conclusion
-
-We developed the user-friendly CNV-clinviewer, a web application that facilitates consistent and transparent evaluation of CNVs. 
+The tool aids in identifying possible driver genes in a given CNV, which in turn is important for genetic counselling and possibly disease prognosis. Overall, this resource will facilitate biomedical CNV interpretation and re-evaluations of large sets of CNVs identified in rare disease cases and, in combination with clinical judgment, enable clinicians and researchers to formulate novel hypotheses and guide their decision-making process. The web-application is publicly available at https://cnv-ClinViewer.broadinstitute.org.
 
 ## CNV-clinviewer GitHub contents
 
-CNV-clinviewer web server data pre-processing and R source code of http://simple-clinvar.broadinstitute.org.
+CNV-clinviewer data pre-processing and R source code of https://cnv-ClinViewer.broadinstitute.org.
 
 ### Data processing
 

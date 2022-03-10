@@ -468,28 +468,61 @@ ui = fluidPage(
                  tabPanel("Abstract",
                           br(),
                           HTML(paste0(
-                          "Copy number variants (CNVs) and their emerging role in in complex diseases are an active field of research. 
-                          Clinical CNV pathogenicity classification and genotype-phenotype analyses are a challenging and time-consuming task, 
-                          that requires the integration of information from many sources that need to be assessed with expert knowledge. 
-                          Here, we introduce the CNV-ClinViewer, an open-source web-application for the clinical evaluation and intuitive exploration of CNVs in one platform. 
-                          We used the Shiny framework of R studio and combined data of >200,000 CNVs from patients and the general population with publicly available genomic, 
-                          bioinformatic and clinical annotations. We integrated an existing CNV classification tool and provide access to enrichment analyses in >180 gene-set libraries. 
-                          To ensure effectiveness and usability we put great emphasize on an interactive workflow with real-time results, visualizations and a user-friendly interface 
-                          design.", "<br>", "<br>", 
-                          
-                          "After the upload of CNV data the CNV-ClinViewer enables,", "<br>", 
-                          "<b>a)</b> semi-automated CNV clinical significance classification based on the 2019 ACMG/ClinGen Technical Standards for CNVs,","<br>", 
-                          "<b>b)</b> comparative and interactive visual inspection of uploaded CNVs and other pathogenic and general population CNV datasets, ","<br>", 
-                          "<b>c)</b> evaluation and prioritization of the genomic content by various gene dosage sensitivity scores, clinical annotations, and gene set enrichment analyses, and", "<br>", 
-                          "<b>d)</b> generation of comprehensive individual CNV reports including clinical significance classification and observed annotations details.",  "<br>", "<br>", 
-                          
-                          "Overall, we believe this resource will facilitate biomedical CNV interpretation in the clinical diagnostic setting, and in combination with clinical 
-                          judgment will enable clinicians and researchers to formulate novel hypotheses and guide their decision-making process.",
+                            "Copy-number variants (CNVs) and their emerging role in complex and rare diseases are an active field of research. 
+                            Clinical CNV pathogenicity classification and genotype-phenotype analyses are challenging and time-consuming tasks 
+                            that require the integration and analysis of information from many sources. Here, we introduce the CNV-ClinViewer, 
+                            an open-source web-application for the clinical evaluation and visual exploration of CNVs. 
+                            We combined data of >250,000 CNVs from patients and the general population with publicly available genomic, bioinformatic and clinical annotations, 
+                            using R studio’s Shiny framework. We integrated an existing CNV classification tool in CNV-ClinViewer and provide access to enrichment analyses in 
+                            >180 gene-set libraries. To ensure effectiveness and usability without bioinformatical expertise, we put great emphasis on an interactive workflow 
+                            with real-time results, visualizations and a user-friendly interface design.",  "<br>", "<br>", 
+                            
+                            "After uploading CNV data, the CNV-ClinViewer enables:", "<br>", 
+                              
+                            "<b>a)</b> semi-automated CNV clinical significance classification based on the 2019 ACMG/ClinGen Technical Standards for CNVs,","<br>", 
+                            "<b>b)</b> comparative and interactive visual inspection of uploaded CNVs along with other pathogenic and general population CNV datasets,","<br>", 
+                            "<b>c)</b> evaluation and prioritization of the genomic content by various gene dosage sensitivity scores, clinical annotations, and gene set enrichment analyses, and","<br>", 
+                            "<b>d)</b> generation of comprehensive individual CNV reports including clinical significance classification and observed annotations details.","<br>","<br>",
+                           
+                 
+                            "The tool aids in identifying possible driver genes in a given CNV, which in turn is important for genetic counselling and possibly disease prognosis. 
+                            Overall, this resource will facilitate biomedical CNV interpretation and re-evaluations of large sets of CNVs identified in rare disease cases and, 
+                            in combination with clinical judgment, enable clinicians and researchers to formulate novel hypotheses and guide their decision-making process.","<br>","<br>",
+                            
+                            "The CNV-ClinViewer is an open-source project, and its code will continue to grow and improve through version control in the GitHub repository (https://github.com/LalResearchGroup/CNV-clinviewer).",
+                            
                           sep = "<br>")
                  )),
                  tabPanel("Team",
                           br(),
-                          p("- coming soon -")
+                          HTML(paste0("Marie Macnee (1), Eduardo Pérez-Palma (2), Tobias Brünger (1), Chiara Klöckner (3), Konrad Platzer (3), 
+                          Arthur Stefanski (4-5), Ludovica Montanucci (4), Allan Bayat (6-7), Maximilian Radtke (3), Ryan Collins (8-9), 
+                          Michael Talkowski (8-9), Daniel Blankenberg (4), Rikke S Møller (6-7), Johannes Lemke (3), Michael Nothnagel (1,10), Patrick May (11), Dennis Lal (1,4-5,8)","<br>","<br>",
+
+
+                              "1 Cologne Center for Genomics (CCG), University of Cologne, Germany.","<br>", 
+                              "2 Universidad del Desarrollo, Centro de Genética y Genómica, Facultad de Medicina Clínica Alemana, Santiago, Chile.","<br>", 
+                              "3 Institute of Human Genetics, Leipzig Medical Center, Leipzig, Germany.","<br>", 
+                              "4 Genomic Medicine Institute, Lerner Research Institute, Cleveland Clinic, Cleveland, OH, USA.","<br>", 
+                              "5 Epilepsy Center, Neurological Institute, Cleveland Clinic, Cleveland, OH, USA.","<br>", 
+                              "6 Department of Epilepsy Genetics and Personalized Medicine, Member of ERN Epicare, Danish Epilepsy Centre, Dianalund, Denmark.","<br>", 
+                              "7 Department of Regional Health Research, Faculty of Health Sciences, University of Southern Denmark, Denmark.","<br>", 
+                              "8 Broad Institute of Massachusetts Institute of Technology and Harvard, Cambridge, MA, USA.","<br>", 
+                              "9 Center for Genomic Medicine, Massachusetts General Hospital, Harvard Medical School, Boston, MA, USA.","<br>", 
+                              "10 University Hospital Cologne, Cologne, Germany.","<br>", 
+                              "11 Luxembourg Centre for Systems Biomedicine, University Luxembourg, Esch-sur-Alzette, Luxembourg.","<br>","<br>",
+                              
+                              
+                              "<b>The CNV-ClinViewer relies on your feedback. Please send an Email if you wish to make a request, a comment, or report a bug.</b>",
+                              "<br>",
+                              "<b>Dennis Lal</b>",
+                              "<i class=\"fa fa-envelope\" role=\"presentation\" aria-label=\"envelope icon\"></i> lald@ccf.org","<br>",
+                              "<b>Marie Macnee</b>",
+                              "<i class=\"fa fa-envelope\" role=\"presentation\" aria-label=\"envelope icon\"></i> mariemacnee1@gmail.com","<br>",
+                              "<b>Eduardo Pérez-Palma</b>",
+                              "<i class=\"fa fa-envelope\" role=\"presentation\" aria-label=\"envelope icon\"></i> eduardoperez@udd.cl"
+                            
+                              ,sep = "<br>"))
                  ))
              ), 
              box(solidHeader = TRUE, status = "navy", width=12,
