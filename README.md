@@ -1,6 +1,6 @@
 # CNV-clinviewer
 
-The CNV-clinviewer (www.cnv-clinviewer.broadinstitute.org) is a user-friendly web-application for the interactive visualization, genomic exploration and standardized clinical significance interpretation of large copy-number variants (CNVs).
+The CNV-clinviewer (www.cnv-ClinViewer.broadinstitute.org) is a user-friendly web-application for the interactive visualization, genomic exploration and standardized clinical significance interpretation of large copy-number variants (CNVs).
 
 Contact: Dennis Lal (lald@ccf.org)
 All code copyright (c) 2022 Dennis Lal and is distributed under terms of the MIT license.
